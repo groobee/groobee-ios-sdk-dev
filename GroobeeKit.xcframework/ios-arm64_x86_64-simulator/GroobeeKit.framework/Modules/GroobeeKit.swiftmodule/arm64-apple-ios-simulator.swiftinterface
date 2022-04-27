@@ -104,10 +104,10 @@ extension GroobeeServiceManager {
   @objc public func setAppSessionEnd(isTerminated: Swift.Bool, iosSessionDtm: Swift.String)
   @objc public func setAppLocationInfo(userLocation: CoreLocation.CLLocation)
   @objc public func setWebViewCookies(webView: WebKit.WKWebView, urlRequest: Foundation.URLRequest)
-  public func setStatsMessageClicked(inAppMessage: GroobeeKit.InAppMessageModel?, campaignKey: Swift.String?, msgType: Swift.String?, clickType: Swift.String?)
-  public func setStatsDI(campaignKey: Swift.String?, msgType: Swift.String?)
+  public func setStatsCL(campaignKey: Swift.String, msgType: Swift.String, clickData: GroobeeKit.ClickData, trackingId: Swift.String?)
+  public func setStatsDI(campaignKey: Swift.String, msgType: Swift.String)
   public func dismissMessages()
-  public func showInAppMessage(inAppMessage: GroobeeKit.InAppMessageModel, campaignKey: Swift.String?, msgType: Swift.String?)
+  public func showInAppMessage(inAppMessage: GroobeeKit.InAppMessageModel, campaignKey: Swift.String, msgType: Swift.String)
   @objc deinit
   @objc override dynamic public init()
 }
@@ -311,21 +311,22 @@ public class RuntimeConfigProvider {
   public static func authAppAdId(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, adId: Swift.String) -> GroobeeKit.RequestParams
   public static func authAppEtc(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, appName: Swift.String, appVersion: Swift.String, appOSVersion: Swift.String) -> GroobeeKit.RequestParams
   public static func authWebViewCookies(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, webCookieId: Swift.String, webUserId: Swift.String) -> GroobeeKit.RequestParams
-  public static func servicePushMessage(serviceKey: Swift.String, actionCd: Swift.String, cookieId: Swift.String, userId: Swift.String, isPushOpened: Swift.Bool? = nil, campaignKeyList: [GroobeeKit.PushData], memberId: Swift.String?) -> GroobeeKit.RequestParams
+  public static func servicePushMessage(serviceKey: Swift.String, actionCd: Swift.String, cookieId: Swift.String, userId: Swift.String, isPushOpened: Swift.Bool? = nil, campaignKeyList: [GroobeeKit.PushData], memberId: Swift.String?, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
   public static func serviceUserInfo(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, id: Swift.String, grade: Swift.String, age: Swift.String, gender: Swift.String, type: Swift.String, memberId: Swift.String?) -> GroobeeKit.RequestParams
-  public static func serviceMemberJoin(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String, screenId: Swift.String) -> GroobeeKit.RequestParams
-  public static func serviceSearchKeyword(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, searchKwd: Swift.String, screenId: Swift.String) -> GroobeeKit.RequestParams
-  public static func serviceShoppingCart(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, screenId: Swift.String, goods: Swift.Array<GroobeeKit.Goods>) -> GroobeeKit.RequestParams
-  public static func serviceGoodsOrder(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, screenId: Swift.String, goods: Swift.Array<GroobeeKit.Goods>) -> GroobeeKit.RequestParams
-  public static func serviceGoodsOrderComplete(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, screenId: Swift.String, orderNo: Swift.String, goods: Swift.Array<GroobeeKit.Goods>) -> GroobeeKit.RequestParams
-  public static func serviceViewGoods(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, screenId: Swift.String, goods: GroobeeKit.Goods) -> GroobeeKit.RequestParams
-  public static func serviceCategory(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, screenId: Swift.String, cateCd: Swift.String, cateNm: Swift.String) -> GroobeeKit.RequestParams
-  public static func serviceCustomerData(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, customData: Foundation.NSMutableDictionary) -> [Swift.String : Any]
-  public static func serviceScreenData(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, screenId: Swift.String, screenName: Swift.String) -> GroobeeKit.RequestParams
-  public static func serviceAppSessionStart(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, isTerminated: Swift.Bool) -> GroobeeKit.RequestParams
-  public static func serviceAppSessionEnd(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, isTerminated: Swift.Bool, iosSessionDtm: Swift.String) -> GroobeeKit.RequestParams
-  public static func serviceAppLocation(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, latitude: Swift.Double, longitude: Swift.Double) -> GroobeeKit.RequestParams
-  public static func statsInAppMessage(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, actionCd: Swift.String, campaignKey: Swift.String, msgType: Swift.String, trackingId: Swift.String? = nil, clickUrl: Swift.String? = nil, clickType: Swift.String? = nil, memberId: Swift.String? = nil) -> GroobeeKit.RequestParams
+  public static func serviceMemberJoin(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String, screenId: Swift.String, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
+  public static func serviceSearchKeyword(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, searchKwd: Swift.String, screenId: Swift.String, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
+  public static func serviceShoppingCart(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, screenId: Swift.String, goods: Swift.Array<GroobeeKit.Goods>, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
+  public static func serviceGoodsOrder(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, screenId: Swift.String, goods: Swift.Array<GroobeeKit.Goods>, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
+  public static func serviceGoodsOrderComplete(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, screenId: Swift.String, orderNo: Swift.String, goods: Swift.Array<GroobeeKit.Goods>, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
+  public static func serviceViewGoods(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, screenId: Swift.String, goods: GroobeeKit.Goods, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
+  public static func serviceCategory(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, screenId: Swift.String, cateCd: Swift.String, cateNm: Swift.String, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
+  public static func serviceCustomerData(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, customData: Foundation.NSMutableDictionary, memberData: GroobeeKit.MemberData?) -> [Swift.String : Any]
+  public static func serviceScreenData(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, screenId: Swift.String, screenName: Swift.String, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
+  public static func serviceAppSessionStart(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, isTerminated: Swift.Bool, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
+  public static func serviceAppSessionEnd(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, isTerminated: Swift.Bool, iosSessionDtm: Swift.String, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
+  public static func serviceAppLocation(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, latitude: Swift.Double, longitude: Swift.Double, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
+  public static func statsDI(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, campaignKey: Swift.String, msgType: Swift.String, memberId: Swift.String? = nil) -> GroobeeKit.RequestParams
+  public static func statsCL(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, campaignKey: Swift.String, msgType: Swift.String, clickData: GroobeeKit.ClickData, trackingId: Swift.String? = nil, memberId: Swift.String? = nil) -> GroobeeKit.RequestParams
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class RequestParams : Swift.Codable {
@@ -367,7 +368,7 @@ public class RuntimeConfigProvider {
   @discardableResult
   public func setCampaignTypeCd(_ campaignTypeCd: Swift.String) -> GroobeeKit.RequestParams
   @discardableResult
-  public func setTrackingId(_ trackingId: Swift.String) -> GroobeeKit.RequestParams
+  public func setTrackingId(_ trackingId: Swift.String?) -> GroobeeKit.RequestParams
   @discardableResult
   public func setClickData(_ clickData: GroobeeKit.ClickData) -> GroobeeKit.RequestParams
   public func setOrderNo(_ orderNo: Swift.String) -> GroobeeKit.RequestParams
@@ -415,6 +416,6 @@ public class InAppMessageDisplay {
   public func setClickEvent(detect: GroobeeKit.DetectClickedButton? = nil)
   public func isShowing() -> Swift.Bool
   public func dismissMessage()
-  public func show(inAppMessage: GroobeeKit.InAppMessageModel, campaignKey: Swift.String?, msgType: Swift.String?)
+  public func show(inAppMessage: GroobeeKit.InAppMessageModel, campaignKey: Swift.String, msgType: Swift.String)
   @objc deinit
 }
