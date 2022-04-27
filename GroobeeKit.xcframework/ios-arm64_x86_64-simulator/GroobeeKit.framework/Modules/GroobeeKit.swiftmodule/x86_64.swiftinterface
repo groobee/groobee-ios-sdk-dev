@@ -19,6 +19,15 @@ public class StickyButtonView {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class Goods : ObjectiveC.NSObject, Swift.Codable {
+  public var goodsNm: Swift.String?
+  public var goodsCd: Swift.String?
+  public var goodsCate: Swift.String?
+  public var goodsCateNm: Swift.String?
+  public var goodsAmt: Swift.String?
+  public var goodsPrc: Swift.String?
+  public var goodsSalePrc: Swift.String?
+  public var goodsCnt: Swift.String?
+  public var goodsImg: Swift.String?
   @objc public func getGoodsNm() -> Swift.String?
   @objc public func getGoodsCd() -> Swift.String?
   @objc public func getGoodsCate() -> Swift.String?
