@@ -77,7 +77,7 @@ public typealias DetectClickedButton = () -> Swift.Void
 }
 @available(iOS 11.0, *)
 extension GroobeeServiceManager {
-  public static func responseService(_ url: Swift.String, urlRequest: Foundation.URLRequest, response: [Swift.String : Any], statusCode: Swift.String?)
+  public static func responseService(_ url: Swift.String, urlRequest: Foundation.URLRequest, response: [Swift.String : Any])
   public static func responseInAppMessage(screenId: Swift.String?, response: [Swift.String : Any])
 }
 @_hasMissingDesignatedInitializers public class UrlUtils {
@@ -181,7 +181,7 @@ public class PopUpView {
 public class StyleConstraints {
   public static var CORNER_RADIUS_TRUE: CoreGraphics.CGFloat
   public static var CORNER_RADIUS_FALSE: CoreGraphics.CGFloat
-  public static var IS_ROUND_TRUE: Swift.Double
+  public static var IS_ROUND_TRUE: Swift.Int
   public static var TXT_SIZE_STICKY_COMMON: CoreGraphics.CGFloat
   public static var TXT_STYLE_REGULAR: Swift.Int
   public static var TXT_STYLE_BOLD: Swift.Int
@@ -201,7 +201,7 @@ public class StyleConstraints {
   public static var GRAVITY_BOTTOM: Swift.Int
   public static func setContainerViewStyle(inAppMessage: GroobeeKit.InAppMessageModel?, view: UIKit.UIView)
   public static func fadeInAnimation(view: UIKit.UIView)
-  public static func setViewCornerRadius(inAppMessage: GroobeeKit.InAppMessageModel?, view: UIKit.UIView, isParentView: Swift.Bool)
+  public static func setViewCornerRadius(isRound: Swift.Int?, view: UIKit.UIView, isParentView: Swift.Bool)
   public static func setTextLabelAlignment(gravity: Swift.Int, label: UIKit.UILabel)
   public static func setTextStyle(messageText: GroobeeKit.MessageText?, textLabel: UIKit.UILabel, isBodyStickyButton: Swift.Bool)
   public static func setTextLabels(messageText: GroobeeKit.MessageText?, label: UIKit.UILabel, isBodyStickyButton: Swift.Bool)
