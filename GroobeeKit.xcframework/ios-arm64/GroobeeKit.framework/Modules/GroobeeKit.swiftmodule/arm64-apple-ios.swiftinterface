@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name GroobeeKit
 import AdSupport
 import CoreLocation
@@ -10,6 +10,7 @@ import UIKit
 import UserNotifications
 import UserNotificationsUI
 import WebKit
+import _Concurrency
 @_hasMissingDesignatedInitializers @available(iOS 11.0, *)
 public class StickyButtonView {
   public static func getInstance() -> GroobeeKit.StickyButtonView
@@ -18,38 +19,37 @@ public class StickyButtonView {
   public func isShowing() -> Swift.Bool
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class Goods : ObjectiveC.NSObject, Swift.Codable {
+@objc public class Goods : ObjectiveC.NSObject, Swift.Codable {
   public var goodsNm: Swift.String?
   public var goodsCd: Swift.String?
   public var goodsCate: Swift.String?
   public var goodsCateNm: Swift.String?
-  public var goodsAmt: Swift.String?
-  public var goodsPrc: Swift.String?
-  public var goodsSalePrc: Swift.String?
-  public var goodsCnt: Swift.String?
+  public var goodsAmt: Swift.Int
+  public var goodsPrc: Swift.Int
+  public var goodsSalePrc: Swift.Int
+  public var goodsCnt: Swift.Int
   public var goodsImg: Swift.String?
   @objc public func getGoodsNm() -> Swift.String?
   @objc public func getGoodsCd() -> Swift.String?
   @objc public func getGoodsCate() -> Swift.String?
   @objc public func getGoodsCateNm() -> Swift.String?
-  @objc public func getGoodsAmt() -> Swift.String?
-  @objc public func getGoodsPrc() -> Swift.String?
-  @objc public func getGoodsSalePrc() -> Swift.String?
-  @objc public func getGoodsCnt() -> Swift.String?
+  @objc public func getGoodsAmt() -> Swift.Int
+  @objc public func getGoodsPrc() -> Swift.Int
+  @objc public func getGoodsSalePrc() -> Swift.Int
+  @objc public func getGoodsCnt() -> Swift.Int
   @objc public func getGoodsImg() -> Swift.String?
   @objc public func setGoodsNm(_ goodsNm: Swift.String) -> GroobeeKit.Goods
   @objc public func setGoodsCd(_ goodsCd: Swift.String) -> GroobeeKit.Goods
   @objc public func setGoodsCate(_ goodsCate: Swift.String) -> GroobeeKit.Goods
   @objc public func setGoodsCateNm(_ goodsCateNm: Swift.String) -> GroobeeKit.Goods
-  @objc public func setGoodsAmt(_ goodsAmt: Swift.String) -> GroobeeKit.Goods
-  @objc public func setGoodsPrc(_ goodsPrc: Swift.String) -> GroobeeKit.Goods
-  @objc public func setGoodsSalePrc(_ goodsSalePrc: Swift.String) -> GroobeeKit.Goods
-  @objc public func setGoodsCnt(_ goodsCnt: Swift.String) -> GroobeeKit.Goods
+  @objc public func setGoodsAmt(_ goodsAmt: Swift.Int) -> GroobeeKit.Goods
+  @objc public func setGoodsPrc(_ goodsPrc: Swift.Int) -> GroobeeKit.Goods
+  @objc public func setGoodsSalePrc(_ goodsSalePrc: Swift.Int) -> GroobeeKit.Goods
+  @objc public func setGoodsCnt(_ goodsCnt: Swift.Int) -> GroobeeKit.Goods
   @objc public func setGoodsImg(_ goodsImg: Swift.String) -> GroobeeKit.Goods
   @objc deinit
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @available(iOS 11.0, *)
 public class StickyBannerView {
@@ -72,11 +72,11 @@ public typealias DetectClickedButton = () -> Swift.Void
   public func setCateCd(_ cateCd: Swift.String) -> GroobeeKit.CategoryData
   public func setCateNm(_ cateNm: Swift.String) -> GroobeeKit.CategoryData
   @objc deinit
-  required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @available(iOS 11.0, *)
-extension GroobeeServiceManager {
+extension GroobeeKit.GroobeeServiceManager {
   public static func responseService(_ url: Swift.String, urlRequest: Foundation.URLRequest, response: [Swift.String : Any])
   public static func responseInAppMessage(screenId: Swift.String?, response: [Swift.String : Any])
 }
@@ -104,7 +104,7 @@ extension GroobeeServiceManager {
   @objc public func setSearchKeyword(searchKwd: Swift.String, screenId: Swift.String, clickButton: GroobeeKit.DetectClickedButton? = nil)
   @objc public func setShoppingCart(goods: Swift.Array<GroobeeKit.Goods>, screenId: Swift.String, clickButton: GroobeeKit.DetectClickedButton? = nil)
   @objc public func setGoodsOrder(goods: Swift.Array<GroobeeKit.Goods>, screenId: Swift.String, clickButton: GroobeeKit.DetectClickedButton? = nil)
-  @objc public func setGoodsOrderComplete(orderNo: Swift.String, goods: Swift.Array<GroobeeKit.Goods>, screenId: Swift.String, clickButton: GroobeeKit.DetectClickedButton? = nil)
+  @objc public func setGoodsOrderComplete(_ orderNo: Swift.String, _ goods: Swift.Array<GroobeeKit.Goods>, _ screenId: Swift.String, _ clickButton: GroobeeKit.DetectClickedButton? = nil)
   @objc public func setViewGoods(goods: GroobeeKit.Goods, screenId: Swift.String, clickButton: GroobeeKit.DetectClickedButton? = nil)
   @objc public func setCategory(cateCd: Swift.String, cateNm: Swift.String, screenId: Swift.String, clickButton: GroobeeKit.DetectClickedButton? = nil)
   @objc public func setCustomerData(customData: Foundation.NSMutableDictionary)
@@ -117,39 +117,40 @@ extension GroobeeServiceManager {
   public func setStatsDI(campaignKey: Swift.String, msgType: Swift.String)
   public func dismissMessages()
   public func showInAppMessage(inAppMessage: GroobeeKit.InAppMessageModel, campaignKey: Swift.String, msgType: Swift.String)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
-@_hasMissingDesignatedInitializers @available(iOS 11.0, *)
-public class GroobeeKitLifeCycle {
+@_inheritsConvenienceInitializers @available(iOS 11.0, *)
+@objc public class GroobeeKitLifeCycle : ObjectiveC.NSObject {
   public static var runtimeConfigProvider: GroobeeKit.RuntimeConfigProvider
-  public static func sceneDidDisconnect()
-  public static func sceneDidBecomeActive()
-  public static func sceneWillResignActive()
-  public static func sceneWillEnterForeground()
-  public static func sceneDidEnterBackground()
+  @objc public static func sceneDidDisconnect()
+  @objc public static func sceneDidBecomeActive()
+  @objc public static func sceneWillResignActive()
+  @objc public static func sceneWillEnterForeground()
+  @objc public static func sceneDidEnterBackground()
   public static func setDirectMessageOpened(_ isDirectMessageOpened: Swift.Bool)
   public static func getStateLifeCycle() -> GroobeeKit.StateLifeCycle
+  @objc override dynamic public init()
   @objc deinit
 }
 public struct MessageText : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @available(iOS 11.0, *)
 public class GroobeeServiceManager {
-  public static var PATTERN_MATCHES_URL: Swift.String
+  public static let PATTERN_MATCHES_URL: Swift.String
   public static func sendSyncRequest(_ url: Swift.String, _ request: Swift.String) -> Swift.Bool
   public static func sendRequest(_ url: Swift.String, _ request: Swift.String, screenId: Swift.String? = nil)
   @objc deinit
 }
 public struct ClickData : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct InAppMessageModel : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @available(iOS 11.0, *)
 public class PopUpView {
@@ -175,30 +176,29 @@ public class PopUpView {
     @objc deinit
   }
   @objc deinit
-  @objc override dynamic public init()
 }
 @_hasMissingDesignatedInitializers @available(iOS 11.0, *)
 public class StyleConstraints {
-  public static var CORNER_RADIUS_TRUE: CoreGraphics.CGFloat
-  public static var CORNER_RADIUS_FALSE: CoreGraphics.CGFloat
-  public static var IS_ROUND_TRUE: Swift.Int
-  public static var TXT_SIZE_STICKY_COMMON: CoreGraphics.CGFloat
-  public static var TXT_STYLE_REGULAR: Swift.Int
-  public static var TXT_STYLE_BOLD: Swift.Int
-  public static var TXT_STYLE_ITALIC: Swift.Int
-  public static var TXT_GRAVITY_CENTER: Swift.Int
-  public static var TXT_GRAVITY_LEFT: Swift.Int
-  public static var TXT_GRAVITY_RIGHT: Swift.Int
-  public static var BACKGROUND_COLOR_POPUP: Swift.String
-  public static var ALPHA_DIM_VIEW: CoreGraphics.CGFloat
-  public static var IMAGE_VIEW_MARGIN: CoreGraphics.CGFloat
-  public static var POP_UP: Swift.String
-  public static var STICKY_DEFAULT: Swift.String
-  public static var OBJECTS_CORNER_RADIUS_TRUE: CoreGraphics.CGFloat
-  public static var TXT_SIZE_STICKY_BUTTON_BODY: CoreGraphics.CGFloat
-  public static var STICKY_BUTTON: Swift.String
-  public static var GRAVITY_TOP: Swift.Int
-  public static var GRAVITY_BOTTOM: Swift.Int
+  public static let CORNER_RADIUS_TRUE: CoreGraphics.CGFloat
+  public static let CORNER_RADIUS_FALSE: CoreGraphics.CGFloat
+  public static let IS_ROUND_TRUE: Swift.Int
+  public static let TXT_SIZE_STICKY_COMMON: CoreGraphics.CGFloat
+  public static let TXT_STYLE_REGULAR: Swift.Int
+  public static let TXT_STYLE_BOLD: Swift.Int
+  public static let TXT_STYLE_ITALIC: Swift.Int
+  public static let TXT_GRAVITY_CENTER: Swift.Int
+  public static let TXT_GRAVITY_LEFT: Swift.Int
+  public static let TXT_GRAVITY_RIGHT: Swift.Int
+  public static let BACKGROUND_COLOR_POPUP: Swift.String
+  public static let ALPHA_DIM_VIEW: CoreGraphics.CGFloat
+  public static let IMAGE_VIEW_MARGIN: CoreGraphics.CGFloat
+  public static let POP_UP: Swift.String
+  public static let STICKY_DEFAULT: Swift.String
+  public static let OBJECTS_CORNER_RADIUS_TRUE: CoreGraphics.CGFloat
+  public static let TXT_SIZE_STICKY_BUTTON_BODY: CoreGraphics.CGFloat
+  public static let STICKY_BUTTON: Swift.String
+  public static let GRAVITY_TOP: Swift.Int
+  public static let GRAVITY_BOTTOM: Swift.Int
   public static func setContainerViewStyle(inAppMessage: GroobeeKit.InAppMessageModel?, view: UIKit.UIView)
   public static func fadeInAnimation(view: UIKit.UIView)
   public static func setViewCornerRadius(isRound: Swift.Int?, view: UIKit.UIView, isParentView: Swift.Bool)
@@ -226,8 +226,8 @@ public class StyleConstraints {
   public func setGender(_ gender: Swift.String) -> GroobeeKit.MemberData
   public func setType(_ type: Swift.String) -> GroobeeKit.MemberData
   @objc deinit
-  required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class PushData : ObjectiveC.NSObject, Swift.Codable {
   public var campaignKey: Swift.String?
@@ -242,10 +242,10 @@ public class StyleConstraints {
   @objc public func setPushMsgType(_ pushMsgType: Swift.String) -> GroobeeKit.PushData
   @objc public func setPushMsgCnt(_ pushMsgCnt: Swift.String) -> GroobeeKit.PushData
   @objc public func setSendDtm(_ sendDtm: Swift.String) -> GroobeeKit.PushData
-  @objc deinit
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public class RuntimeConfigProvider {
   public init()
@@ -309,8 +309,8 @@ public class RuntimeConfigProvider {
   public func setLongitude(_ longitude: Swift.Double) -> GroobeeKit.AppData
   public func setCampaignKeyList(_ campaignKeyList: [GroobeeKit.PushData]) -> GroobeeKit.AppData
   @objc deinit
-  required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class ModelBuilder {
   public static func authServiceKey(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, packageName: Swift.String, memberId: Swift.String?) -> GroobeeKit.RequestParams
@@ -389,18 +389,18 @@ public class RuntimeConfigProvider {
   public func setGoods(_ goods: Swift.Array<GroobeeKit.Goods>) -> GroobeeKit.RequestParams
   public func setCategory(_ category: GroobeeKit.CategoryData) -> GroobeeKit.RequestParams
   @objc deinit
-  required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @available(iOS 11.0, *)
 @objc open class GroobeeNotification : ObjectiveC.NSObject {
   @objc public static func getInstance() -> GroobeeKit.GroobeeNotification
   @objc public func receiveService(_ request: UserNotifications.UNNotificationRequest, _ bestAttemptContent: UserNotifications.UNMutableNotificationContent, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void) -> Swift.Bool
   @objc public func receiveContent(_ notification: UserNotifications.UNNotification) -> Swift.Bool
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
-@objc extension URLSession {
+@objc extension Foundation.URLSession {
   @objc dynamic open class func downloadImage(url: Foundation.URL, withCompletionHandler completionHandler: @escaping (Foundation.Data?, Foundation.NSError?) -> Swift.Void)
 }
 public enum StateLifeCycle {
@@ -410,14 +410,14 @@ public enum StateLifeCycle {
   case WILL_ENTER_FOREGROUND
   case WILL_RESIGN_ACTIVE
   public static func == (a: GroobeeKit.StateLifeCycle, b: GroobeeKit.StateLifeCycle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public struct MessageButton : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @available(iOS 11.0, *)
 public class InAppMessageDisplay {
@@ -428,3 +428,5 @@ public class InAppMessageDisplay {
   public func show(inAppMessage: GroobeeKit.InAppMessageModel, campaignKey: Swift.String, msgType: Swift.String)
   @objc deinit
 }
+extension GroobeeKit.StateLifeCycle : Swift.Equatable {}
+extension GroobeeKit.StateLifeCycle : Swift.Hashable {}
