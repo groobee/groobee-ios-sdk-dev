@@ -92,7 +92,7 @@ extension GroobeeServiceManager {
   @objc public static func getInstance() -> GroobeeKit.Groobee
   @objc public static func configure(groobeeConfig: GroobeeKit.GroobeeConfig?)
   @objc public func setServiceKey(groobeeConfig: GroobeeKit.GroobeeConfig?)
-  @objc public func setServiceLogin(memberId: Swift.String)
+  @objc public func setServiceLogin(memberId: Swift.String?)
   @objc public func setPushAgreeAP(isPushAgreedAP: Swift.Bool)
   @objc public func setPushAgreeAA(isPushAgreedAA: Swift.Bool)
   @objc public func setPushAgreeAN(isPushAgreedAN: Swift.Bool)
@@ -139,12 +139,14 @@ public struct MessageText : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
-@_hasMissingDesignatedInitializers @available(iOS 10.0, *)
-public class GroobeeServiceManager {
+@objc @_inheritsConvenienceInitializers @available(iOS 10.0, *)
+public class GroobeeServiceManager : ObjectiveC.NSObject, Foundation.URLSessionDelegate {
   public static var PATTERN_MATCHES_URL: Swift.String
   public static func sendSyncRequest(_ url: Swift.String, _ request: Swift.String) -> Swift.Bool
   public static func sendRequest(_ url: Swift.String, _ request: Swift.String, screenId: Swift.String? = nil)
+  @objc public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   @objc deinit
+  @objc override dynamic public init()
 }
 public struct ClickData : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
