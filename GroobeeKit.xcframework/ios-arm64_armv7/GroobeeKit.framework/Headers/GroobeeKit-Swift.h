@@ -213,7 +213,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @interface Agreeds : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic) BOOL agreedAP;
+@property (nonatomic) BOOL agreedAA;
+@property (nonatomic) BOOL agreedAN;
 @end
 
 
@@ -577,7 +579,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @interface Agreeds : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic) BOOL agreedAP;
+@property (nonatomic) BOOL agreedAA;
+@property (nonatomic) BOOL agreedAN;
 @end
 
 

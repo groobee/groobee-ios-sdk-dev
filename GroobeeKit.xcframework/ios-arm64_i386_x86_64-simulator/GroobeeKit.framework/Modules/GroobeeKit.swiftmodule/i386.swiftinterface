@@ -261,12 +261,11 @@ public class StyleConstraints {
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
-@_inheritsConvenienceInitializers @objc public class Agreeds : ObjectiveC.NSObject, Swift.Codable {
-  public var agreedAP: Swift.Bool?
-  public var agreedAA: Swift.Bool?
-  public var agreedAN: Swift.Bool?
+@objc public class Agreeds : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var agreedAP: Swift.Bool
+  @objc public var agreedAA: Swift.Bool
+  @objc public var agreedAN: Swift.Bool
   @objc deinit
-  @objc override dynamic public init()
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
