@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GroobeeKitDev'
-  s.version          = '1.0.12'
+  s.version          = '1.0.13'
   s.summary          = 'GroobeeKitDev Framework Library'
 
 # This description is used to generate tags and improve search results.

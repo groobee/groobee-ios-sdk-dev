@@ -11,6 +11,7 @@ import UIKit
 import UserNotifications
 import UserNotificationsUI
 import WebKit
+import XCTest
 @_hasMissingDesignatedInitializers @available(iOS 10.0, *)
 public class StickyButtonView {
   public static func getInstance() -> GroobeeKit.StickyButtonView
@@ -262,9 +263,9 @@ public class StyleConstraints {
   public func encode(to encoder: Swift.Encoder) throws
 }
 @objc public class Agreeds : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var agreedAP: Swift.Bool
-  @objc public var agreedAA: Swift.Bool
-  @objc public var agreedAN: Swift.Bool
+  public var agreedAP: Swift.Bool
+  public var agreedAA: Swift.Bool
+  public var agreedAN: Swift.Bool
   @objc public func getAgreedAP() -> Swift.Bool
   @objc public func getAgreedAA() -> Swift.Bool
   @objc public func getAgreedAN() -> Swift.Bool

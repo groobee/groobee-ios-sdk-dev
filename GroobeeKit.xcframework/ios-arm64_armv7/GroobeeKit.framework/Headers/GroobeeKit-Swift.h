@@ -213,9 +213,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @interface Agreeds : NSObject
-@property (nonatomic) BOOL agreedAP;
-@property (nonatomic) BOOL agreedAA;
-@property (nonatomic) BOOL agreedAN;
 - (BOOL)getAgreedAP SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)getAgreedAA SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)getAgreedAN SWIFT_WARN_UNUSED_RESULT;
@@ -582,9 +579,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @interface Agreeds : NSObject
-@property (nonatomic) BOOL agreedAP;
-@property (nonatomic) BOOL agreedAA;
-@property (nonatomic) BOOL agreedAN;
 - (BOOL)getAgreedAP SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)getAgreedAA SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)getAgreedAN SWIFT_WARN_UNUSED_RESULT;
