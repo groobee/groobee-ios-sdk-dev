@@ -216,6 +216,9 @@ SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @property (nonatomic) BOOL agreedAP;
 @property (nonatomic) BOOL agreedAA;
 @property (nonatomic) BOOL agreedAN;
+- (BOOL)getAgreedAP SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getAgreedAA SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getAgreedAN SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -582,6 +585,9 @@ SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @property (nonatomic) BOOL agreedAP;
 @property (nonatomic) BOOL agreedAA;
 @property (nonatomic) BOOL agreedAN;
+- (BOOL)getAgreedAP SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getAgreedAA SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getAgreedAN SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -948,6 +954,9 @@ SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @property (nonatomic) BOOL agreedAP;
 @property (nonatomic) BOOL agreedAA;
 @property (nonatomic) BOOL agreedAN;
+- (BOOL)getAgreedAP SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getAgreedAA SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getAgreedAN SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
