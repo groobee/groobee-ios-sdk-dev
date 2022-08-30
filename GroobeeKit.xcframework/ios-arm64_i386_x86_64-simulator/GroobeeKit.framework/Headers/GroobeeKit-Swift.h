@@ -213,9 +213,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @interface Agreeds : NSObject
-- (BOOL)getAgreedAP SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)getAgreedAA SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)getAgreedAN SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic) BOOL agreedAP;
+@property (nonatomic) BOOL agreedAA;
+@property (nonatomic) BOOL agreedAN;
 @end
 
 
@@ -257,7 +257,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)setPushAgreeAAWithIsPushAgreedAA:(BOOL)isPushAgreedAA;
 - (void)setPushAgreeANWithIsPushAgreedAN:(BOOL)isPushAgreedAN;
 - (void)syncMemberAgreedWithMemberId:(NSString * _Nonnull)memberId;
-- (Agreeds * _Nullable)getSyncMemberAgreedWithMemberId:(NSString * _Nonnull)memberId SWIFT_WARN_UNUSED_RESULT;
+- (Agreeds * _Nullable)getPushAgreedWithMemberId:(NSString * _Nonnull)memberId SWIFT_WARN_UNUSED_RESULT;
 - (void)setPushTokenWithPushToken:(NSString * _Nonnull)pushToken;
 - (void)userNotificationCenterWithUserInfo:(NSDictionary * _Nonnull)userInfo;
 - (void)didReceiveRemoteNotificationWithUserInfo:(NSDictionary * _Nonnull)userInfo;
@@ -579,9 +579,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @interface Agreeds : NSObject
-- (BOOL)getAgreedAP SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)getAgreedAA SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)getAgreedAN SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic) BOOL agreedAP;
+@property (nonatomic) BOOL agreedAA;
+@property (nonatomic) BOOL agreedAN;
 @end
 
 
@@ -623,7 +623,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)setPushAgreeAAWithIsPushAgreedAA:(BOOL)isPushAgreedAA;
 - (void)setPushAgreeANWithIsPushAgreedAN:(BOOL)isPushAgreedAN;
 - (void)syncMemberAgreedWithMemberId:(NSString * _Nonnull)memberId;
-- (Agreeds * _Nullable)getSyncMemberAgreedWithMemberId:(NSString * _Nonnull)memberId SWIFT_WARN_UNUSED_RESULT;
+- (Agreeds * _Nullable)getPushAgreedWithMemberId:(NSString * _Nonnull)memberId SWIFT_WARN_UNUSED_RESULT;
 - (void)setPushTokenWithPushToken:(NSString * _Nonnull)pushToken;
 - (void)userNotificationCenterWithUserInfo:(NSDictionary * _Nonnull)userInfo;
 - (void)didReceiveRemoteNotificationWithUserInfo:(NSDictionary * _Nonnull)userInfo;
@@ -945,9 +945,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @interface Agreeds : NSObject
-- (BOOL)getAgreedAP SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)getAgreedAA SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)getAgreedAN SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic) BOOL agreedAP;
+@property (nonatomic) BOOL agreedAA;
+@property (nonatomic) BOOL agreedAN;
 @end
 
 
@@ -989,7 +989,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)setPushAgreeAAWithIsPushAgreedAA:(BOOL)isPushAgreedAA;
 - (void)setPushAgreeANWithIsPushAgreedAN:(BOOL)isPushAgreedAN;
 - (void)syncMemberAgreedWithMemberId:(NSString * _Nonnull)memberId;
-- (Agreeds * _Nullable)getSyncMemberAgreedWithMemberId:(NSString * _Nonnull)memberId SWIFT_WARN_UNUSED_RESULT;
+- (Agreeds * _Nullable)getPushAgreedWithMemberId:(NSString * _Nonnull)memberId SWIFT_WARN_UNUSED_RESULT;
 - (void)setPushTokenWithPushToken:(NSString * _Nonnull)pushToken;
 - (void)userNotificationCenterWithUserInfo:(NSDictionary * _Nonnull)userInfo;
 - (void)didReceiveRemoteNotificationWithUserInfo:(NSDictionary * _Nonnull)userInfo;

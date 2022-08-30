@@ -98,7 +98,7 @@ extension GroobeeServiceManager {
   @objc public func setPushAgreeAA(isPushAgreedAA: Swift.Bool)
   @objc public func setPushAgreeAN(isPushAgreedAN: Swift.Bool)
   @objc public func syncMemberAgreed(memberId: Swift.String)
-  @objc public func getSyncMemberAgreed(memberId: Swift.String) -> GroobeeKit.Agreeds?
+  @objc public func getPushAgreed(memberId: Swift.String) -> GroobeeKit.Agreeds?
   @objc public func setPushToken(pushToken: Swift.String)
   @objc public func userNotificationCenter(userInfo: [Swift.AnyHashable : Any])
   @objc public func didReceiveRemoteNotification(userInfo: [Swift.AnyHashable : Any])
@@ -263,12 +263,9 @@ public class StyleConstraints {
   public func encode(to encoder: Swift.Encoder) throws
 }
 @objc public class Agreeds : ObjectiveC.NSObject, Swift.Codable {
-  public var agreedAP: Swift.Bool
-  public var agreedAA: Swift.Bool
-  public var agreedAN: Swift.Bool
-  @objc public func getAgreedAP() -> Swift.Bool
-  @objc public func getAgreedAA() -> Swift.Bool
-  @objc public func getAgreedAN() -> Swift.Bool
+  @objc public var agreedAP: Swift.Bool
+  @objc public var agreedAA: Swift.Bool
+  @objc public var agreedAN: Swift.Bool
   @objc deinit
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
@@ -356,7 +353,7 @@ public class StyleConstraints {
 @_hasMissingDesignatedInitializers public class ModelBuilder {
   public static func authServiceKey(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, packageName: Swift.String, memberId: Swift.String?) -> GroobeeKit.RequestParams
   public static func authServiceLogin(serviceKey: Swift.String, cookieId: Swift.String, memberId: Swift.String?) -> GroobeeKit.RequestParams
-  public static func authPushAgreed(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, isAgreed: Swift.Bool, agreedType: Swift.String) -> GroobeeKit.RequestParams
+  public static func authPushAgreed(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, isAgreed: Swift.Bool, agreedType: Swift.String) -> GroobeeKit.RequestParams
   public static func authSyncMemberAgreed(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String) -> GroobeeKit.RequestParams
   public static func authPushToken(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, pushToken: Swift.String) -> GroobeeKit.RequestParams
   public static func authAppAdId(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, adId: Swift.String) -> GroobeeKit.RequestParams
