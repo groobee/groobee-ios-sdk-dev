@@ -83,10 +83,10 @@ extension GroobeeServiceManager {
   public static func responseRecommendGoods(_ url: Swift.String, urlRequest: Foundation.URLRequest, response: [Swift.String : Any]) -> [GroobeeKit.Goods]
   public static func responseInAppMessage(screenId: Swift.String?, response: [Swift.String : Any])
 }
-@_hasMissingDesignatedInitializers public class UrlUtils {
-  @available(iOS 10.0, *)
+@objc @_inheritsConvenienceInitializers public class UrlUtils : UIKit.UIApplication {
   public static func open(url: Swift.String)
   @objc deinit
+  @objc override dynamic public init()
 }
 @_inheritsConvenienceInitializers @available(iOS 10.0, *)
 @objc public class Groobee : ObjectiveC.NSObject {

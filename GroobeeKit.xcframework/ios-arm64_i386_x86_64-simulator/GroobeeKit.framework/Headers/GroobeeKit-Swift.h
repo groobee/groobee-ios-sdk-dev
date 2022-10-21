@@ -193,6 +193,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -360,6 +361,12 @@ SWIFT_CLASS("_TtC10GroobeeKit8PushData")
 
 @interface NSURLSession (SWIFT_EXTENSION(GroobeeKit))
 + (void)downloadImageWithUrl:(NSURL * _Nonnull)url withCompletionHandler:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))completionHandler;
+@end
+
+
+SWIFT_CLASS("_TtC10GroobeeKit8UrlUtils")
+@interface UrlUtils : UIApplication
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #if __has_attribute(external_source_symbol)
@@ -562,6 +569,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -729,6 +737,12 @@ SWIFT_CLASS("_TtC10GroobeeKit8PushData")
 
 @interface NSURLSession (SWIFT_EXTENSION(GroobeeKit))
 + (void)downloadImageWithUrl:(NSURL * _Nonnull)url withCompletionHandler:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))completionHandler;
+@end
+
+
+SWIFT_CLASS("_TtC10GroobeeKit8UrlUtils")
+@interface UrlUtils : UIApplication
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #if __has_attribute(external_source_symbol)
@@ -931,6 +945,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -1098,6 +1113,12 @@ SWIFT_CLASS("_TtC10GroobeeKit8PushData")
 
 @interface NSURLSession (SWIFT_EXTENSION(GroobeeKit))
 + (void)downloadImageWithUrl:(NSURL * _Nonnull)url withCompletionHandler:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))completionHandler;
+@end
+
+
+SWIFT_CLASS("_TtC10GroobeeKit8UrlUtils")
+@interface UrlUtils : UIApplication
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #if __has_attribute(external_source_symbol)
