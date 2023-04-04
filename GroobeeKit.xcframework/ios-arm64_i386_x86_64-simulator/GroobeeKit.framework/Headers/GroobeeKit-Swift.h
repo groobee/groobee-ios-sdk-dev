@@ -244,6 +244,8 @@ SWIFT_CLASS("_TtC10GroobeeKit5Goods")
 @end
 
 @class GroobeeConfig;
+@protocol ResponseAgreeds;
+@protocol ResponseGoods;
 @class NSMutableDictionary;
 @class CLLocation;
 @class WKWebView;
@@ -259,6 +261,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)setPushAgreeANWithIsPushAgreedAN:(BOOL)isPushAgreedAN;
 - (void)syncMemberAgreedWithMemberId:(NSString * _Nonnull)memberId;
 - (Agreeds * _Nullable)getPushAgreedWithMemberId:(NSString * _Nonnull)memberId SWIFT_WARN_UNUSED_RESULT;
+- (void)getPushAgreedWithMemberId:(NSString * _Nonnull)memberId responseAgreeds:(id <ResponseAgreeds> _Nonnull)responseAgreeds;
 - (void)setPushTokenWithPushToken:(NSString * _Nonnull)pushToken;
 - (void)userNotificationCenterWithUserInfo:(NSDictionary * _Nonnull)userInfo;
 - (void)didReceiveRemoteNotificationWithUserInfo:(NSDictionary * _Nonnull)userInfo;
@@ -272,6 +275,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)setGoodsOrderCompleteWithOrderNo:(NSString * _Nonnull)orderNo goods:(NSArray<Goods *> * _Nonnull)goods screenId:(NSString * _Nonnull)screenId clickButton:(void (^ _Nullable)(void))clickButton;
 - (void)setViewGoodsWithGoods:(Goods * _Nonnull)goods screenId:(NSString * _Nonnull)screenId clickButton:(void (^ _Nullable)(void))clickButton;
 - (NSArray<Goods *> * _Nonnull)getRecommendGoodsWithCampaignKey:(NSString * _Nonnull)campaignKey timeout:(double)timeout SWIFT_WARN_UNUSED_RESULT;
+- (void)getRecommendGoodsWithCampaignKey:(NSString * _Nonnull)campaignKey responseGoods:(id <ResponseGoods> _Nonnull)responseGoods;
 - (void)setShowRecommendGoodsWithGoods:(NSArray<Goods *> * _Nonnull)goods;
 - (void)setClickRecommendGoodsWithGoods:(Goods * _Nonnull)goods;
 - (void)setCategoryWithCateCd:(NSString * _Nonnull)cateCd cateNm:(NSString * _Nonnull)cateNm screenId:(NSString * _Nonnull)screenId clickButton:(void (^ _Nullable)(void))clickButton;
@@ -350,6 +354,20 @@ SWIFT_CLASS("_TtC10GroobeeKit8PushData")
 - (PushData * _Nonnull)setPushMsgCnt:(NSString * _Nonnull)pushMsgCnt SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setSendDtm:(NSString * _Nonnull)sendDtm SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL("_TtP10GroobeeKit15ResponseAgreeds_")
+@protocol ResponseAgreeds
+- (void)onSuccessWithAgreeds:(Agreeds * _Nonnull)agreeds;
+- (void)onFailedWithExceptionMsg:(NSString * _Nonnull)exceptionMsg;
+@end
+
+
+SWIFT_PROTOCOL("_TtP10GroobeeKit13ResponseGoods_")
+@protocol ResponseGoods
+- (void)onSuccessWithGoods:(NSArray<Goods *> * _Nonnull)goods;
+- (void)onFailedWithExceptionMsg:(NSString * _Nonnull)exceptionMsg;
 @end
 
 
@@ -620,6 +638,8 @@ SWIFT_CLASS("_TtC10GroobeeKit5Goods")
 @end
 
 @class GroobeeConfig;
+@protocol ResponseAgreeds;
+@protocol ResponseGoods;
 @class NSMutableDictionary;
 @class CLLocation;
 @class WKWebView;
@@ -635,6 +655,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)setPushAgreeANWithIsPushAgreedAN:(BOOL)isPushAgreedAN;
 - (void)syncMemberAgreedWithMemberId:(NSString * _Nonnull)memberId;
 - (Agreeds * _Nullable)getPushAgreedWithMemberId:(NSString * _Nonnull)memberId SWIFT_WARN_UNUSED_RESULT;
+- (void)getPushAgreedWithMemberId:(NSString * _Nonnull)memberId responseAgreeds:(id <ResponseAgreeds> _Nonnull)responseAgreeds;
 - (void)setPushTokenWithPushToken:(NSString * _Nonnull)pushToken;
 - (void)userNotificationCenterWithUserInfo:(NSDictionary * _Nonnull)userInfo;
 - (void)didReceiveRemoteNotificationWithUserInfo:(NSDictionary * _Nonnull)userInfo;
@@ -648,6 +669,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)setGoodsOrderCompleteWithOrderNo:(NSString * _Nonnull)orderNo goods:(NSArray<Goods *> * _Nonnull)goods screenId:(NSString * _Nonnull)screenId clickButton:(void (^ _Nullable)(void))clickButton;
 - (void)setViewGoodsWithGoods:(Goods * _Nonnull)goods screenId:(NSString * _Nonnull)screenId clickButton:(void (^ _Nullable)(void))clickButton;
 - (NSArray<Goods *> * _Nonnull)getRecommendGoodsWithCampaignKey:(NSString * _Nonnull)campaignKey timeout:(double)timeout SWIFT_WARN_UNUSED_RESULT;
+- (void)getRecommendGoodsWithCampaignKey:(NSString * _Nonnull)campaignKey responseGoods:(id <ResponseGoods> _Nonnull)responseGoods;
 - (void)setShowRecommendGoodsWithGoods:(NSArray<Goods *> * _Nonnull)goods;
 - (void)setClickRecommendGoodsWithGoods:(Goods * _Nonnull)goods;
 - (void)setCategoryWithCateCd:(NSString * _Nonnull)cateCd cateNm:(NSString * _Nonnull)cateNm screenId:(NSString * _Nonnull)screenId clickButton:(void (^ _Nullable)(void))clickButton;
@@ -726,6 +748,20 @@ SWIFT_CLASS("_TtC10GroobeeKit8PushData")
 - (PushData * _Nonnull)setPushMsgCnt:(NSString * _Nonnull)pushMsgCnt SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setSendDtm:(NSString * _Nonnull)sendDtm SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL("_TtP10GroobeeKit15ResponseAgreeds_")
+@protocol ResponseAgreeds
+- (void)onSuccessWithAgreeds:(Agreeds * _Nonnull)agreeds;
+- (void)onFailedWithExceptionMsg:(NSString * _Nonnull)exceptionMsg;
+@end
+
+
+SWIFT_PROTOCOL("_TtP10GroobeeKit13ResponseGoods_")
+@protocol ResponseGoods
+- (void)onSuccessWithGoods:(NSArray<Goods *> * _Nonnull)goods;
+- (void)onFailedWithExceptionMsg:(NSString * _Nonnull)exceptionMsg;
 @end
 
 
@@ -996,6 +1032,8 @@ SWIFT_CLASS("_TtC10GroobeeKit5Goods")
 @end
 
 @class GroobeeConfig;
+@protocol ResponseAgreeds;
+@protocol ResponseGoods;
 @class NSMutableDictionary;
 @class CLLocation;
 @class WKWebView;
@@ -1011,6 +1049,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)setPushAgreeANWithIsPushAgreedAN:(BOOL)isPushAgreedAN;
 - (void)syncMemberAgreedWithMemberId:(NSString * _Nonnull)memberId;
 - (Agreeds * _Nullable)getPushAgreedWithMemberId:(NSString * _Nonnull)memberId SWIFT_WARN_UNUSED_RESULT;
+- (void)getPushAgreedWithMemberId:(NSString * _Nonnull)memberId responseAgreeds:(id <ResponseAgreeds> _Nonnull)responseAgreeds;
 - (void)setPushTokenWithPushToken:(NSString * _Nonnull)pushToken;
 - (void)userNotificationCenterWithUserInfo:(NSDictionary * _Nonnull)userInfo;
 - (void)didReceiveRemoteNotificationWithUserInfo:(NSDictionary * _Nonnull)userInfo;
@@ -1024,6 +1063,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)setGoodsOrderCompleteWithOrderNo:(NSString * _Nonnull)orderNo goods:(NSArray<Goods *> * _Nonnull)goods screenId:(NSString * _Nonnull)screenId clickButton:(void (^ _Nullable)(void))clickButton;
 - (void)setViewGoodsWithGoods:(Goods * _Nonnull)goods screenId:(NSString * _Nonnull)screenId clickButton:(void (^ _Nullable)(void))clickButton;
 - (NSArray<Goods *> * _Nonnull)getRecommendGoodsWithCampaignKey:(NSString * _Nonnull)campaignKey timeout:(double)timeout SWIFT_WARN_UNUSED_RESULT;
+- (void)getRecommendGoodsWithCampaignKey:(NSString * _Nonnull)campaignKey responseGoods:(id <ResponseGoods> _Nonnull)responseGoods;
 - (void)setShowRecommendGoodsWithGoods:(NSArray<Goods *> * _Nonnull)goods;
 - (void)setClickRecommendGoodsWithGoods:(Goods * _Nonnull)goods;
 - (void)setCategoryWithCateCd:(NSString * _Nonnull)cateCd cateNm:(NSString * _Nonnull)cateNm screenId:(NSString * _Nonnull)screenId clickButton:(void (^ _Nullable)(void))clickButton;
@@ -1102,6 +1142,20 @@ SWIFT_CLASS("_TtC10GroobeeKit8PushData")
 - (PushData * _Nonnull)setPushMsgCnt:(NSString * _Nonnull)pushMsgCnt SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setSendDtm:(NSString * _Nonnull)sendDtm SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL("_TtP10GroobeeKit15ResponseAgreeds_")
+@protocol ResponseAgreeds
+- (void)onSuccessWithAgreeds:(Agreeds * _Nonnull)agreeds;
+- (void)onFailedWithExceptionMsg:(NSString * _Nonnull)exceptionMsg;
+@end
+
+
+SWIFT_PROTOCOL("_TtP10GroobeeKit13ResponseGoods_")
+@protocol ResponseGoods
+- (void)onSuccessWithGoods:(NSArray<Goods *> * _Nonnull)goods;
+- (void)onFailedWithExceptionMsg:(NSString * _Nonnull)exceptionMsg;
 @end
 
 
