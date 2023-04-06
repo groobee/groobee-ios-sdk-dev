@@ -11,7 +11,6 @@ import UIKit
 import UserNotifications
 import UserNotificationsUI
 import WebKit
-import XCTest
 @_hasMissingDesignatedInitializers @available(iOS 10.0, *)
 public class StickyButtonView {
   public static func getInstance() -> GroobeeKit.StickyButtonView
