@@ -294,15 +294,15 @@ public class StyleConstraints {
   public var campaignKey: Swift.String?
   public var pushMsgType: Swift.String?
   public var pushMsgCnt: Swift.String?
-  public var sendDtm: Swift.String?
+  public var pushSendDtm: Swift.String?
   @objc public func getCampaignKey() -> Swift.String?
   @objc public func getPushMsgType() -> Swift.String?
   @objc public func getPushMsgCnt() -> Swift.String?
-  @objc public func getSendDtm() -> Swift.String?
+  @objc public func getPushSendDtm() -> Swift.String?
   @objc public func setCampaignKey(_ campaignKey: Swift.String) -> GroobeeKit.PushData
   @objc public func setPushMsgType(_ pushMsgType: Swift.String) -> GroobeeKit.PushData
   @objc public func setPushMsgCnt(_ pushMsgCnt: Swift.String) -> GroobeeKit.PushData
-  @objc public func setSendDtm(_ sendDtm: Swift.String) -> GroobeeKit.PushData
+  @objc public func setPushSendDtm(_ pushSendDtm: Swift.String) -> GroobeeKit.PushData
   @objc deinit
   @objc override dynamic public init()
   required public init(from decoder: Swift.Decoder) throws
@@ -379,7 +379,6 @@ public class StyleConstraints {
   public static func authPushAgreed(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, isAgreed: Swift.Bool, agreedType: Swift.String) -> GroobeeKit.RequestParams
   public static func authSyncMemberAgreed(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String) -> GroobeeKit.RequestParams
   public static func authPushToken(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, pushToken: Swift.String) -> GroobeeKit.RequestParams
-  public static func authAppAdId(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, adId: Swift.String) -> GroobeeKit.RequestParams
   public static func authAppEtc(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, appName: Swift.String, appVersion: Swift.String, appOSVersion: Swift.String) -> GroobeeKit.RequestParams
   public static func authWebViewCookies(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, memberId: Swift.String?, webCookieId: Swift.String, webUserId: Swift.String) -> GroobeeKit.RequestParams
   public static func servicePushMessage(serviceKey: Swift.String, actionCd: Swift.String, cookieId: Swift.String, userId: Swift.String, isPushOpened: Swift.Bool? = nil, campaignKeyList: [GroobeeKit.PushData], memberId: Swift.String?, memberData: GroobeeKit.MemberData?) -> GroobeeKit.RequestParams
