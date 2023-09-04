@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GroobeeKitDev'
-  s.version          = '1.0.34'
+  s.version          = '1.0.35'
   s.summary          = 'GroobeeKitDev Framework Library'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                           LICENSE
                         }
 
-  s.author           = { 'GroobeeKitDev' => 'hongoon@plateer.com' }
+  s.author           = { 'GroobeeKitDev' => 'gustnqpf3@plateer.com' }
   s.source           = { :git => 'https://github.com/groobee/groobee-ios-sdk-dev.git' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.vendored_frameworks = "GroobeeKit.xcframework"
