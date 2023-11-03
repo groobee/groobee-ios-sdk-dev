@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                           LICENSE
                         }
 
-  s.author           = { 'GroobeeKitDev' => 'gustnqpf3@plateer.com' }
+  s.author           = { 'GroobeeKitDev' => 'hongoon@plateer.com' }
   s.source           = { :git => 'https://github.com/groobee/groobee-ios-sdk-dev.git' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.vendored_frameworks = "GroobeeKit.xcframework"
