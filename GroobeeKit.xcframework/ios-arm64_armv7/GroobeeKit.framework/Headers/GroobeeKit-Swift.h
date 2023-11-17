@@ -254,6 +254,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface Groobee : NSObject
 + (Groobee * _Nonnull)getInstance SWIFT_WARN_UNUSED_RESULT;
 + (void)configureWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig;
+- (void)setAppBundleInfo;
 - (void)setServiceKeyWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig;
 - (void)setServiceLoginWithMemberId:(NSString * _Nullable)memberId;
 - (void)setPushAgreeAPWithIsPushAgreedAP:(BOOL)isPushAgreedAP;
@@ -648,6 +649,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface Groobee : NSObject
 + (Groobee * _Nonnull)getInstance SWIFT_WARN_UNUSED_RESULT;
 + (void)configureWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig;
+- (void)setAppBundleInfo;
 - (void)setServiceKeyWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig;
 - (void)setServiceLoginWithMemberId:(NSString * _Nullable)memberId;
 - (void)setPushAgreeAPWithIsPushAgreedAP:(BOOL)isPushAgreedAP;
