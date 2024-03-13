@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GroobeeKitDev'
-  s.version          = '1.0.40'
+  s.version          = '1.0.41'
   s.summary          = 'GroobeeKitDev Framework Library'
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'http://plateer.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'Copyright', :file => <<-LICENSE
+  s.license          = { :type => 'Copyright', :text => <<-LICENSE
                           Copyright 2021 All Rights Reserved By Groobee
                           LICENSE
                         }
