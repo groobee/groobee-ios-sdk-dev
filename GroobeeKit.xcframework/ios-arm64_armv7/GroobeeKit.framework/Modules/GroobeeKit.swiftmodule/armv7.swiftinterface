@@ -103,7 +103,7 @@ extension GroobeeServiceManager {
 @objc public class Groobee : ObjectiveC.NSObject {
   public var runtimeConfigProvider: GroobeeKit.RuntimeConfigProvider?
   @objc public static func getInstance() -> GroobeeKit.Groobee
-  @objc public static func configure(groobeeConfig: GroobeeKit.GroobeeConfig?)
+  @objc public static func configure(groobeeConfig: GroobeeKit.GroobeeConfig?, debugMode: GroobeeKit.DebugMode)
   public func allowSyncWebCookies()
   @objc public func setAppBundleInfo()
   public func setIsAuth(isAuth: Swift.Bool)
@@ -296,6 +296,16 @@ public class StyleConstraints {
   @objc deinit
   required public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public enum DebugMode : Swift.Int {
+  case QA1
+  case QA2
+  case DEV
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @objc public class Agreeds : ObjectiveC.NSObject, Swift.Codable {
   @objc public var agreedAP: Swift.Bool

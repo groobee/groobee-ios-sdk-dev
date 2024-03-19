@@ -219,6 +219,12 @@ SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @property (nonatomic) BOOL agreedAN;
 @end
 
+typedef SWIFT_ENUM(NSInteger, DebugMode, open) {
+  DebugModeQA1 = 0,
+  DebugModeQA2 = 1,
+  DebugModeDEV = 2,
+};
+
 
 SWIFT_CLASS("_TtC10GroobeeKit5Goods")
 @interface Goods : NSObject
@@ -253,7 +259,7 @@ SWIFT_CLASS("_TtC10GroobeeKit5Goods")
 SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface Groobee : NSObject
 + (Groobee * _Nonnull)getInstance SWIFT_WARN_UNUSED_RESULT;
-+ (void)configureWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig;
++ (void)configureWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig debugMode:(enum DebugMode)debugMode;
 - (void)setAppBundleInfo;
 - (void)setServiceKeyWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig;
 - (void)setServiceLoginWithMemberId:(NSString * _Nullable)memberId;
@@ -616,6 +622,12 @@ SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @property (nonatomic) BOOL agreedAN;
 @end
 
+typedef SWIFT_ENUM(NSInteger, DebugMode, open) {
+  DebugModeQA1 = 0,
+  DebugModeQA2 = 1,
+  DebugModeDEV = 2,
+};
+
 
 SWIFT_CLASS("_TtC10GroobeeKit5Goods")
 @interface Goods : NSObject
@@ -650,7 +662,7 @@ SWIFT_CLASS("_TtC10GroobeeKit5Goods")
 SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface Groobee : NSObject
 + (Groobee * _Nonnull)getInstance SWIFT_WARN_UNUSED_RESULT;
-+ (void)configureWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig;
++ (void)configureWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig debugMode:(enum DebugMode)debugMode;
 - (void)setAppBundleInfo;
 - (void)setServiceKeyWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig;
 - (void)setServiceLoginWithMemberId:(NSString * _Nullable)memberId;
@@ -1013,6 +1025,12 @@ SWIFT_CLASS("_TtC10GroobeeKit7Agreeds")
 @property (nonatomic) BOOL agreedAN;
 @end
 
+typedef SWIFT_ENUM(NSInteger, DebugMode, open) {
+  DebugModeQA1 = 0,
+  DebugModeQA2 = 1,
+  DebugModeDEV = 2,
+};
+
 
 SWIFT_CLASS("_TtC10GroobeeKit5Goods")
 @interface Goods : NSObject
@@ -1047,7 +1065,7 @@ SWIFT_CLASS("_TtC10GroobeeKit5Goods")
 SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface Groobee : NSObject
 + (Groobee * _Nonnull)getInstance SWIFT_WARN_UNUSED_RESULT;
-+ (void)configureWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig;
++ (void)configureWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig debugMode:(enum DebugMode)debugMode;
 - (void)setAppBundleInfo;
 - (void)setServiceKeyWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig;
 - (void)setServiceLoginWithMemberId:(NSString * _Nullable)memberId;
