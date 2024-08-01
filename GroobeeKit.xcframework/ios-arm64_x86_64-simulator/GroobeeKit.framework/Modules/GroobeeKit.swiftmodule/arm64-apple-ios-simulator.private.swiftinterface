@@ -304,6 +304,7 @@ public class StyleConstraints {
   case QA1
   case QA2
   case DEV
+  case DEV_APP
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

@@ -313,6 +313,7 @@ typedef SWIFT_ENUM(NSInteger, DebugMode, open) {
   DebugModeQA1 = 0,
   DebugModeQA2 = 1,
   DebugModeDEV = 2,
+  DebugModeDEV_APP = 3,
 };
 
 @class NSString;
@@ -814,6 +815,7 @@ typedef SWIFT_ENUM(NSInteger, DebugMode, open) {
   DebugModeQA1 = 0,
   DebugModeQA2 = 1,
   DebugModeDEV = 2,
+  DebugModeDEV_APP = 3,
 };
 
 @class NSString;
