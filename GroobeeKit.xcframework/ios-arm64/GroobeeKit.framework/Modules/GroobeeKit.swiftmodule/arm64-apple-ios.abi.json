@@ -25323,7 +25323,7 @@
           {
             "kind": "Function",
             "name": "onSuccess",
-            "printedName": "onSuccess(aiRecoomend:)",
+            "printedName": "onSuccess(aiRecommend:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -25338,8 +25338,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GroobeeKit@objc(pl)ResponseGoods(im)onSuccessWithAiRecoomend:",
-            "mangledName": "$s10GroobeeKit13ResponseGoodsP9onSuccess11aiRecoomendyAA19ArtificialRecommendC_tF",
+            "usr": "c:@M@GroobeeKit@objc(pl)ResponseGoods(im)onSuccessWithAiRecommend:",
+            "mangledName": "$s10GroobeeKit13ResponseGoodsP9onSuccess11aiRecommendyAA010ArtificialH0C_tF",
             "moduleName": "GroobeeKit",
             "genericSig": "<τ_0_0 where τ_0_0 : GroobeeKit.ResponseGoods>",
             "sugared_genericSig": "<Self where Self : GroobeeKit.ResponseGoods>",
@@ -31030,7 +31030,7 @@
       "kind": "StringLiteral",
       "offset": 286,
       "length": 8,
-      "value": "\"1.0.48\""
+      "value": "\"1.0.49\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/Common\/Constraints.swift",
