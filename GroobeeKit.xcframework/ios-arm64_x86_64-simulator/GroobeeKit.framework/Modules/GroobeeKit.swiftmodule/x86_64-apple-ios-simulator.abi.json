@@ -7557,6 +7557,49 @@
           },
           {
             "kind": "Function",
+            "name": "setUserInfo",
+            "printedName": "setUserInfo(userInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GroobeeKit@objc(cs)Groobee(im)setUserInfoWithUserInfo:",
+            "mangledName": "$s10GroobeeKit0A0C11setUserInfo04userE0ySDySSypG_tF",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "objc_name": "setUserInfoWithUserInfo:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setMemberJoin",
             "printedName": "setMemberJoin(memberId:screenId:clickButton:)",
             "children": [
@@ -8495,6 +8538,44 @@
             "moduleName": "GroobeeKit",
             "isOpen": true,
             "objc_name": "setAppLocationInfoWithUserLocation:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getGroobeeWebCookies",
+            "printedName": "getGroobeeWebCookies()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GroobeeKit@objc(cs)Groobee(im)getGroobeeWebCookies",
+            "mangledName": "$s10GroobeeKit0A0C03getA10WebCookiesSDyS2SGyF",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -16995,6 +17076,235 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "vendorCd",
+            "printedName": "vendorCd",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10GroobeeKit10MemberDataC8vendorCdSSSgvp",
+            "mangledName": "$s10GroobeeKit10MemberDataC8vendorCdSSSgvp",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit10MemberDataC8vendorCdSSSgvg",
+                "mangledName": "$s10GroobeeKit10MemberDataC8vendorCdSSSgvg",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit10MemberDataC8vendorCdSSSgvs",
+                "mangledName": "$s10GroobeeKit10MemberDataC8vendorCdSSSgvs",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit10MemberDataC8vendorCdSSSgvM",
+                "mangledName": "$s10GroobeeKit10MemberDataC8vendorCdSSSgvM",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "point",
+            "printedName": "point",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10GroobeeKit10MemberDataC5pointSSSgvp",
+            "mangledName": "$s10GroobeeKit10MemberDataC5pointSSSgvp",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit10MemberDataC5pointSSSgvg",
+                "mangledName": "$s10GroobeeKit10MemberDataC5pointSSSgvg",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit10MemberDataC5pointSSSgvs",
+                "mangledName": "$s10GroobeeKit10MemberDataC5pointSSSgvs",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit10MemberDataC5pointSSSgvM",
+                "mangledName": "$s10GroobeeKit10MemberDataC5pointSSSgvM",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "getId",
             "printedName": "getId()",
@@ -17213,6 +17523,66 @@
           },
           {
             "kind": "Function",
+            "name": "getVendorCd",
+            "printedName": "getVendorCd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10GroobeeKit10MemberDataC11getVendorCdSSSgyF",
+            "mangledName": "$s10GroobeeKit10MemberDataC11getVendorCdSSSgyF",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPoint",
+            "printedName": "getPoint()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10GroobeeKit10MemberDataC8getPointSSSgyF",
+            "mangledName": "$s10GroobeeKit10MemberDataC8getPointSSSgyF",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setId",
             "printedName": "setId(_:)",
             "children": [
@@ -17413,6 +17783,64 @@
               "AccessControl",
               "DiscardableResult",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setVendorCd",
+            "printedName": "setVendorCd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MemberData",
+                "printedName": "GroobeeKit.MemberData",
+                "usr": "s:10GroobeeKit10MemberDataC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10GroobeeKit10MemberDataC11setVendorCdyACSSF",
+            "mangledName": "$s10GroobeeKit10MemberDataC11setVendorCdyACSSF",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPoint",
+            "printedName": "setPoint(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MemberData",
+                "printedName": "GroobeeKit.MemberData",
+                "usr": "s:10GroobeeKit10MemberDataC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10GroobeeKit10MemberDataC8setPointyACSSF",
+            "mangledName": "$s10GroobeeKit10MemberDataC8setPointyACSSF",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -21841,7 +22269,7 @@
           {
             "kind": "Function",
             "name": "serviceUserInfo",
-            "printedName": "serviceUserInfo(serviceKey:cookieId:userId:id:grade:age:gender:type:pagr:iagr:memberId:)",
+            "printedName": "serviceUserInfo(serviceKey:cookieId:userId:memberId:memberData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -21869,66 +22297,6 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "Swift.String?",
                 "children": [
@@ -21940,11 +22308,17 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MemberData",
+                "printedName": "GroobeeKit.MemberData",
+                "usr": "s:10GroobeeKit10MemberDataC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10GroobeeKit12ModelBuilderC15serviceUserInfo0E3Key8cookieId04userJ02id5grade3age6gender4type4pagr4iagr06memberJ0AA13RequestParamsCSS_S8SSgA2RtFZ",
-            "mangledName": "$s10GroobeeKit12ModelBuilderC15serviceUserInfo0E3Key8cookieId04userJ02id5grade3age6gender4type4pagr4iagr06memberJ0AA13RequestParamsCSS_S8SSgA2RtFZ",
+            "usr": "s:10GroobeeKit12ModelBuilderC15serviceUserInfo0E3Key8cookieId04userJ006memberJ00L4DataAA13RequestParamsCSS_S3SSgAA06MemberM0CtFZ",
+            "mangledName": "$s10GroobeeKit12ModelBuilderC15serviceUserInfo0E3Key8cookieId04userJ006memberJ00L4DataAA13RequestParamsCSS_S3SSgAA06MemberM0CtFZ",
             "moduleName": "GroobeeKit",
             "static": true,
             "declAttributes": [
@@ -31030,7 +31404,7 @@
       "kind": "StringLiteral",
       "offset": 286,
       "length": 8,
-      "value": "\"1.0.52\""
+      "value": "\"1.0.53\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/Common\/Constraints.swift",

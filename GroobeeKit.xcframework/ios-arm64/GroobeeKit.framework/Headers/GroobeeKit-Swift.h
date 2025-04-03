@@ -388,6 +388,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)inDirectPushOpened;
 - (void)setUserInfoWithId:(NSString * _Nonnull)id grade:(NSString * _Nonnull)grade age:(NSString * _Nonnull)age gender:(NSString * _Nonnull)gender type:(NSString * _Nonnull)type;
 - (void)setUserInfoWithId:(NSString * _Nonnull)id grade:(NSString * _Nonnull)grade age:(NSString * _Nonnull)age gender:(NSString * _Nonnull)gender type:(NSString * _Nonnull)type pagr:(NSString * _Nonnull)pagr iagr:(NSString * _Nonnull)iagr;
+- (void)setUserInfoWithUserInfo:(NSDictionary<NSString *, id> * _Nonnull)userInfo;
 - (void)setMemberJoinWithMemberId:(NSString * _Nonnull)memberId screenId:(NSString * _Nonnull)screenId clickButton:(void (^ _Nullable)(void))clickButton;
 - (void)setSearchKeywordWithSearchKwd:(NSString * _Nonnull)searchKwd screenId:(NSString * _Nonnull)screenId clickButton:(void (^ _Nullable)(void))clickButton;
 - (void)setShoppingCartWithGoods:(NSArray<Goods *> * _Nonnull)goods screenId:(NSString * _Nonnull)screenId clickButton:(void (^ _Nullable)(void))clickButton;
@@ -406,6 +407,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)setAppSessionStartWithIsTerminated:(BOOL)isTerminated;
 - (void)setAppSessionEndWithIsTerminated:(BOOL)isTerminated iosSessionDtm:(NSString * _Nonnull)iosSessionDtm;
 - (void)setAppLocationInfoWithUserLocation:(CLLocation * _Nonnull)userLocation;
+- (NSDictionary<NSString *, NSString *> * _Nonnull)getGroobeeWebCookies SWIFT_WARN_UNUSED_RESULT;
 - (void)setWebViewCookiesWithWebView:(WKWebView * _Nonnull)webView urlRequest:(NSURLRequest * _Nonnull)urlRequest;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
