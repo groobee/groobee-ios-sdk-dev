@@ -3116,6 +3116,56 @@
           },
           {
             "kind": "Var",
+            "name": "AUTH_DOMAIN_DEBUG_APP",
+            "printedName": "AUTH_DOMAIN_DEBUG_APP",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10GroobeeKit17ServicesConstantsV21AUTH_DOMAIN_DEBUG_APPSSvpZ",
+            "mangledName": "$s10GroobeeKit17ServicesConstantsV21AUTH_DOMAIN_DEBUG_APPSSvpZ",
+            "moduleName": "GroobeeKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit17ServicesConstantsV21AUTH_DOMAIN_DEBUG_APPSSvgZ",
+                "mangledName": "$s10GroobeeKit17ServicesConstantsV21AUTH_DOMAIN_DEBUG_APPSSvgZ",
+                "moduleName": "GroobeeKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "SERVICE_DOMAIN_DEBUG_APP",
             "printedName": "SERVICE_DOMAIN_DEBUG_APP",
             "children": [
@@ -31116,160 +31166,167 @@
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
       "offset": 777,
+      "length": 28,
+      "value": "\"https:\/\/g2-auth.groobee.io\""
+    },
+    {
+      "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
+      "kind": "StringLiteral",
+      "offset": 852,
       "length": 32,
       "value": "\"https:\/\/g2-auth-app.groobee.io\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 864,
+      "offset": 939,
       "length": 35,
       "value": "\"https:\/\/g2-service-app.groobee.io\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 945,
+      "offset": 1020,
       "length": 31,
       "value": "\"https:\/\/g2-service.groobee.io\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1029,
+      "offset": 1104,
       "length": 33,
       "value": "\"https:\/\/g2-stats-app.groobee.io\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1106,
+      "offset": 1181,
       "length": 29,
       "value": "\"https:\/\/g2-stats.groobee.io\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1198,
+      "offset": 1273,
       "length": 24,
       "value": "\"https:\/\/gau.groobee.io\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
+      "offset": 1350,
       "length": 24,
       "value": "\"https:\/\/gse.groobee.io\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1350,
+      "offset": 1425,
       "length": 24,
       "value": "\"https:\/\/gst.groobee.io\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1428,
+      "offset": 1503,
       "length": 11,
       "value": "\"\/auth\/app\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1487,
+      "offset": 1562,
       "length": 16,
       "value": "\"\/auth\/checkapp\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1549,
+      "offset": 1624,
       "length": 14,
       "value": "\"\/auth\/agreed\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1614,
+      "offset": 1689,
       "length": 19,
       "value": "\"\/auth\/sync\/agreed\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1684,
+      "offset": 1759,
       "length": 18,
       "value": "\"\/auth\/useragreed\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1751,
+      "offset": 1826,
       "length": 17,
       "value": "\"\/auth\/pushtoken\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1812,
+      "offset": 1887,
       "length": 12,
       "value": "\"\/auth\/adid\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1867,
+      "offset": 1942,
       "length": 11,
       "value": "\"\/auth\/etc\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 1922,
+      "offset": 1997,
       "length": 12,
       "value": "\"\/auth\/sync\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 2010,
+      "offset": 2085,
       "length": 14,
       "value": "\"\/appcampaign\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 2079,
+      "offset": 2154,
       "length": 19,
       "value": "\"\/custom\/recommend\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 2171,
+      "offset": 2246,
       "length": 13,
       "value": "\"\/data\/procM\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 2241,
+      "offset": 2316,
       "length": 12,
       "value": "\"\/data\/rcpe\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 2290,
+      "offset": 2365,
       "length": 13,
       "value": "\"\/data\/rcpre\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/ServicesConstraints.swift",
       "kind": "StringLiteral",
-      "offset": 2339,
+      "offset": 2414,
       "length": 12,
       "value": "\"\/data\/rcpc\""
     },
@@ -31404,7 +31461,7 @@
       "kind": "StringLiteral",
       "offset": 286,
       "length": 8,
-      "value": "\"1.0.53\""
+      "value": "\"1.0.54\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/Common\/Constraints.swift",
