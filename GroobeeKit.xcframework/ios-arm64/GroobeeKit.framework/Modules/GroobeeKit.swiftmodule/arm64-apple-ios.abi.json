@@ -10875,9 +10875,119 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "nDayVal",
+            "printedName": "nDayVal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10GroobeeKit9ClickDataV7nDayValSiSgvp",
+            "mangledName": "$s10GroobeeKit9ClickDataV7nDayValSiSgvp",
+            "moduleName": "GroobeeKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit9ClickDataV7nDayValSiSgvg",
+                "mangledName": "$s10GroobeeKit9ClickDataV7nDayValSiSgvg",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit9ClickDataV7nDayValSiSgvs",
+                "mangledName": "$s10GroobeeKit9ClickDataV7nDayValSiSgvs",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit9ClickDataV7nDayValSiSgvM",
+                "mangledName": "$s10GroobeeKit9ClickDataV7nDayValSiSgvM",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(clickUrl:clickType:)",
+            "printedName": "init(clickUrl:clickType:nDayVal:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10914,11 +11024,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10GroobeeKit9ClickDataV8clickUrl0E4TypeACSSSg_AFtcfc",
-            "mangledName": "$s10GroobeeKit9ClickDataV8clickUrl0E4TypeACSSSg_AFtcfc",
+            "usr": "s:10GroobeeKit9ClickDataV8clickUrl0E4Type7nDayValACSSSg_AGSiSgtcfc",
+            "mangledName": "$s10GroobeeKit9ClickDataV8clickUrl0E4Type7nDayValACSSSg_AGSiSgtcfc",
             "moduleName": "GroobeeKit",
             "implicit": true,
             "init_kind": "Designated"
@@ -28308,6 +28433,43 @@
           },
           {
             "kind": "Function",
+            "name": "actionNDayView",
+            "printedName": "actionNDayView(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UITapGestureRecognizer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITapGestureRecognizer",
+                    "printedName": "UIKit.UITapGestureRecognizer",
+                    "usr": "c:objc(cs)UITapGestureRecognizer"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10GroobeeKit19InAppMessageDisplayC14actionNDayViewyySo22UITapGestureRecognizerCSgF",
+            "mangledName": "$s10GroobeeKit19InAppMessageDisplayC14actionNDayViewyySo22UITapGestureRecognizerCSgF",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "actionPositiveView",
             "printedName": "actionPositiveView(_:)",
             "children": [
@@ -31977,7 +32139,7 @@
       "kind": "StringLiteral",
       "offset": 286,
       "length": 8,
-      "value": "\"1.0.56\""
+      "value": "\"1.0.57\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/Common\/Constraints.swift",
