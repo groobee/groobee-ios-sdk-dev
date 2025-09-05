@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kjGUNDCASfRzNsnzw9Ni73NhE+s=
+		8Mrlo2b8eXvFyxBRh28INMwIWJ0=
 		</data>
 		<key>Modules/GroobeeKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		3qAgplolADZKepTAwBqRTxGQI/s=
+		cKsWYLKIJqmF0jLWEAimR3YWDh8=
 		</data>
 		<key>Modules/GroobeeKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		y1+ELlP21zDLaJ+lnRT5qGvq7oo=
+		vQmmcr6fQSjRFgRC9EDG99xKJcM=
 		</data>
 		<key>Modules/GroobeeKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/GroobeeKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		y1+ELlP21zDLaJ+lnRT5qGvq7oo=
+		vQmmcr6fQSjRFgRC9EDG99xKJcM=
 		</data>
 		<key>Modules/GroobeeKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Cae0CLis26ARXz1ruCIjsLu6zaU=
+		Y5GxpIMUE00ycNXqvj6mbYWxNJk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -50,22 +50,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3qAgplolADZKepTAwBqRTxGQI/s=
+			cKsWYLKIJqmF0jLWEAimR3YWDh8=
 			</data>
 			<key>hash2</key>
 			<data>
-			SGRMdTXPIYDjycdM36eXXZmi/RnTmUv313KMYbgMCpQ=
+			5XJf7bDohadjz35d4xSjA5H9q+wMKB/HCeHAK1QuyS4=
 			</data>
 		</dict>
 		<key>Modules/GroobeeKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y1+ELlP21zDLaJ+lnRT5qGvq7oo=
+			vQmmcr6fQSjRFgRC9EDG99xKJcM=
 			</data>
 			<key>hash2</key>
 			<data>
-			K8v+r5Z4oRqXSMusgcudOVf+D/Da2nhuwUs73Oxo0TU=
+			c13LyxBCKCewjCRWgnOZKpjnv47KGOwpdvBcL9eeHsU=
 			</data>
 		</dict>
 		<key>Modules/GroobeeKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -83,22 +83,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y1+ELlP21zDLaJ+lnRT5qGvq7oo=
+			vQmmcr6fQSjRFgRC9EDG99xKJcM=
 			</data>
 			<key>hash2</key>
 			<data>
-			K8v+r5Z4oRqXSMusgcudOVf+D/Da2nhuwUs73Oxo0TU=
+			c13LyxBCKCewjCRWgnOZKpjnv47KGOwpdvBcL9eeHsU=
 			</data>
 		</dict>
 		<key>Modules/GroobeeKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Cae0CLis26ARXz1ruCIjsLu6zaU=
+			Y5GxpIMUE00ycNXqvj6mbYWxNJk=
 			</data>
 			<key>hash2</key>
 			<data>
-			lOFRCog6ZkX2Clke1+aIijONp/GkT5a0jYUgDFFzpQE=
+			6NGORi+q79ixhk3xBnoHrixrngUA51ygNHIOqxCnrfY=
 			</data>
 		</dict>
 	</dict>

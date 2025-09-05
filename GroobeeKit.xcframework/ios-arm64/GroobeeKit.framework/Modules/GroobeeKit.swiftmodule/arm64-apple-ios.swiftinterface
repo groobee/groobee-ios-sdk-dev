@@ -261,6 +261,10 @@ public class PopUpView {
   }
   @objc deinit
 }
+public struct MessageData : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @_hasMissingDesignatedInitializers @available(iOS 10.0, *)
 public class StyleConstraints {
   public static let CORNER_RADIUS_TRUE: CoreFoundation.CGFloat
