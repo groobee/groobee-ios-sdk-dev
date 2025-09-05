@@ -32139,7 +32139,7 @@
       "kind": "StringLiteral",
       "offset": 286,
       "length": 8,
-      "value": "\"1.0.57\""
+      "value": "\"1.0.58\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/Common\/Constraints.swift",
@@ -32284,30 +32284,44 @@
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/InAppMessage\/PopUpView.swift",
       "kind": "StringLiteral",
-      "offset": 1214,
+      "offset": 1213,
       "length": 22,
       "value": "\"SpoqaHanSans-Regular\""
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/InAppMessage\/PopUpView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1244,
+      "offset": 1243,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/InAppMessage\/PopUpView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1306,
+      "offset": 1305,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/InAppMessage\/PopUpView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1353,
+      "offset": 1352,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/InAppMessage\/PopUpView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1539,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/InAppMessage\/PopUpView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1711,
+      "length": 3,
+      "value": "1.0"
     },
     {
       "filePath": "\/Users\/hataejong\/Desktop\/work\/dev\/GroobeeKit-Dev\/Sources\/GroobeeKit\/Model\/Global\/GroobeeConfig.swift",
