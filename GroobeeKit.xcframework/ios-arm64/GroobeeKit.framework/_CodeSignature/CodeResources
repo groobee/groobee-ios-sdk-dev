@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lqgIzPDdEIjzF/1u9fttWTMqpi0=
+		+rdOIrWTIz/Q3rWrGFi2pAAyxCE=
 		</data>
 		<key>Modules/GroobeeKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		C958/a80uYqmYi5Mv3DgMktM098=
+		F4YFksmBYgpT26HLCbrhsnql5gI=
 		</data>
 		<key>Modules/GroobeeKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/GroobeeKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		F7qwxZxt0xzxgPTnJe9hJxaTzHw=
+		PBYmtIxCMjcOFm55BRFgV312i9w=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -50,11 +50,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C958/a80uYqmYi5Mv3DgMktM098=
+			F4YFksmBYgpT26HLCbrhsnql5gI=
 			</data>
 			<key>hash2</key>
 			<data>
-			S3HQrESUPg7lxjpm7KdIik9j7nARpk/rLjqWf+U7NPk=
+			VX2P6XQzmN6OivtBLSv3Picd22prl5h1HXJRkBWJ6uU=
 			</data>
 		</dict>
 		<key>Modules/GroobeeKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -94,11 +94,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			F7qwxZxt0xzxgPTnJe9hJxaTzHw=
+			PBYmtIxCMjcOFm55BRFgV312i9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			95qnK6mqZaadwXSAUqwZFaEaMidITGDvoE7R+ASZgK8=
+			0WnJkmUljdweI4r6nXm/i+BFO+2bxgdGYK7pP3EAfCk=
 			</data>
 		</dict>
 	</dict>
