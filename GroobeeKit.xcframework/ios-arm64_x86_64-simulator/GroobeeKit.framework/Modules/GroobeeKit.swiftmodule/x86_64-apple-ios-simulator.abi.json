@@ -12044,6 +12044,56 @@
           },
           {
             "kind": "Var",
+            "name": "KEYCHAIN_LAST_MEMBER_ID",
+            "printedName": "KEYCHAIN_LAST_MEMBER_ID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10GroobeeKit11ConstraintsV23KEYCHAIN_LAST_MEMBER_IDSSvpZ",
+            "mangledName": "$s10GroobeeKit11ConstraintsV23KEYCHAIN_LAST_MEMBER_IDSSvpZ",
+            "moduleName": "GroobeeKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit11ConstraintsV23KEYCHAIN_LAST_MEMBER_IDSSvgZ",
+                "mangledName": "$s10GroobeeKit11ConstraintsV23KEYCHAIN_LAST_MEMBER_IDSSvgZ",
+                "moduleName": "GroobeeKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "KEYCHAIN_IS_SYNC",
             "printedName": "KEYCHAIN_IS_SYNC",
             "children": [
@@ -32168,7 +32218,7 @@
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Groobee.swift",
       "kind": "IntegerLiteral",
-      "offset": 84721,
+      "offset": 85289,
       "length": 1,
       "value": "0"
     },
@@ -32273,84 +32323,91 @@
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
       "kind": "StringLiteral",
-      "offset": 828,
+      "offset": 835,
+      "length": 14,
+      "value": "\"LastMemberId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
+      "kind": "StringLiteral",
+      "offset": 891,
       "length": 8,
       "value": "\"isSync\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
       "kind": "StringLiteral",
-      "offset": 882,
+      "offset": 945,
       "length": 12,
       "value": "\"memberData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
       "kind": "StringLiteral",
-      "offset": 941,
+      "offset": 1004,
       "length": 12,
       "value": "\"iosSendDtm\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
       "kind": "StringLiteral",
-      "offset": 997,
+      "offset": 1060,
       "length": 10,
       "value": "\"syncTime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
       "kind": "StringLiteral",
-      "offset": 1052,
+      "offset": 1115,
       "length": 27,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
       "kind": "StringLiteral",
-      "offset": 1136,
+      "offset": 1199,
       "length": 25,
       "value": "\"CampaignInfoPushMessage\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
       "kind": "StringLiteral",
-      "offset": 1221,
+      "offset": 1284,
       "length": 32,
       "value": "\"CampaignInfoCurrentPushMessage\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
       "kind": "StringLiteral",
-      "offset": 1308,
+      "offset": 1371,
       "length": 23,
       "value": "\"DirectOpenCampaignKey\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
       "kind": "StringLiteral",
-      "offset": 1378,
+      "offset": 1441,
       "length": 18,
       "value": "\"grb_recent_goods\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
       "kind": "StringLiteral",
-      "offset": 1439,
+      "offset": 1502,
       "length": 17,
       "value": "\"recentGoodsList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
       "kind": "StringLiteral",
-      "offset": 1494,
+      "offset": 1557,
       "length": 13,
       "value": "\"campaignKey\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/Constraints.swift",
       "kind": "StringLiteral",
-      "offset": 1545,
+      "offset": 1608,
       "length": 13,
       "value": "\"algorithmCd\""
     },
