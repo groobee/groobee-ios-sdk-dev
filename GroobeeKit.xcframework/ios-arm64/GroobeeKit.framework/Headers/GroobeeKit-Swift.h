@@ -370,6 +370,7 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 + (Groobee * _Nonnull)getInstance SWIFT_WARN_UNUSED_RESULT;
 - (void)serviceLogout;
 - (void)memberDataClear;
++ (void)configureWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig debugMode:(enum DebugMode)debugMode;
 + (void)configureWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig;
 - (void)setAppBundleInfo;
 - (void)setServiceKeyWithGroobeeConfig:(GroobeeConfig * _Nullable)groobeeConfig;

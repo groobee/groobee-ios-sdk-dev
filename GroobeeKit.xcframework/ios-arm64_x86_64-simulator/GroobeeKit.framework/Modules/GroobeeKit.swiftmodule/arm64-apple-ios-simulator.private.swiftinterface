@@ -109,6 +109,7 @@ extension GroobeeKit.GroobeeServiceManager {
   @objc public static func getInstance() -> GroobeeKit.Groobee
   @objc public func serviceLogout()
   @objc public func memberDataClear()
+  @objc(configureWithGroobeeConfig:debugMode:) public static func configure(groobeeConfig: GroobeeKit.GroobeeConfig?, debugMode: GroobeeKit.DebugMode)
   @objc public static func configure(groobeeConfig: GroobeeKit.GroobeeConfig?)
   public func allowSyncWebCookies()
   @objc public func setAppBundleInfo()
