@@ -412,6 +412,19 @@ public class StyleConstraints {
   public static func statsClickRecommendGoods(serviceKey: Swift.String, cookieId: Swift.String, userId: Swift.String, campaignKey: Swift.String, algorithmCd: Swift.String, requestId: Swift.String, goods: [GroobeeKit.Goods], memberId: Swift.String? = nil) -> GroobeeKit.RequestParams
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @objcMembers final public class GroobeeVersionInfo : ObjectiveC.NSObject {
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkBuildVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkVersionString: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class RequestParams : Swift.Codable {
   public func getServiceKey() -> Swift.String?
   public func getCookieId() -> Swift.String?
