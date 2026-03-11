@@ -32253,15 +32253,8 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Groobee.swift",
-      "kind": "StringLiteral",
-      "offset": 1575,
-      "length": 23,
-      "value": "\"com.groobee.sdk.queue\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Groobee.swift",
       "kind": "IntegerLiteral",
-      "offset": 84356,
+      "offset": 85281,
       "length": 1,
       "value": "0"
     },
