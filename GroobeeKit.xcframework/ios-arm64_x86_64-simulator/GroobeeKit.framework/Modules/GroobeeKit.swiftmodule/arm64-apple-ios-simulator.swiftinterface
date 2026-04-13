@@ -214,6 +214,9 @@ public struct InAppMessageModel : Swift.Codable {
   @objc public static func get() -> Swift.String?
   @discardableResult
   @objc public static func renewTraceId() -> Swift.String
+  public static func perform<T>(traceId: Swift.String?, _ work: () throws -> T) rethrows -> T
+  public static func wrap(_ traceId: Swift.String?, _ work: @escaping () -> Swift.Void) -> () -> Swift.Void
+  public static func wrapCurrent(_ work: @escaping () -> Swift.Void) -> () -> Swift.Void
   @objc public static func clear()
   @objc override dynamic public init()
   @objc deinit
