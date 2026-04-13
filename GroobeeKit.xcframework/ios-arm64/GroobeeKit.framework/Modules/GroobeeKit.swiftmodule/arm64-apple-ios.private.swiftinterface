@@ -212,6 +212,8 @@ public struct InAppMessageModel : Swift.Codable {
 @_inheritsConvenienceInitializers @objc final public class GroobeeTraceContext : ObjectiveC.NSObject {
   @objc(setTraceId:) public static func set(_ traceId: Swift.String?)
   @objc public static func get() -> Swift.String?
+  @discardableResult
+  @objc public static func renewTraceId() -> Swift.String
   @objc public static func clear()
   @objc override dynamic public init()
   @objc deinit
@@ -222,6 +224,8 @@ public struct InAppMessageModel : Swift.Codable {
   @objc public static func getLogLevel() -> Swift.Int
   @objc public static func setDetailLogEnabled(_ enabled: Swift.Bool)
   @objc public static func setTraceEnabled(_ enabled: Swift.Bool)
+  @discardableResult
+  @objc public static func renewTraceId() -> Swift.String
   @objc public static func setLogCallback(_ callback: (any GroobeeKit.GroobeeLogCallback)?)
   @objc(setOptions:value:) public static func setOptions(_ key: Swift.String, value: Any)
   @objc public static func getClassLogTag(_ classForTag: Swift.AnyClass) -> Swift.String

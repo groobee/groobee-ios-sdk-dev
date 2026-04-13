@@ -13292,6 +13292,31 @@
           },
           {
             "kind": "Function",
+            "name": "renewTraceId",
+            "printedName": "renewTraceId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GroobeeKit@objc(cs)GroobeeTraceContext(cm)renewTraceId",
+            "mangledName": "$s10GroobeeKit0A12TraceContextC05renewC2IdSSyFZ",
+            "moduleName": "GroobeeKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "clear",
             "printedName": "clear()",
             "children": [
@@ -13559,6 +13584,31 @@
               "Final",
               "AccessControl",
               "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "renewTraceId",
+            "printedName": "renewTraceId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GroobeeKit@objc(cs)LoggerUtils(cm)renewTraceId",
+            "mangledName": "$s10GroobeeKit11LoggerUtilsC12renewTraceIdSSyFZ",
+            "moduleName": "GroobeeKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -34464,7 +34514,7 @@
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Groobee.swift",
       "kind": "IntegerLiteral",
-      "offset": 96771,
+      "offset": 96806,
       "length": 1,
       "value": "0"
     },
@@ -34653,126 +34703,126 @@
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 152,
+      "offset": 267,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 171,
+      "offset": 286,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 189,
+      "offset": 304,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 207,
+      "offset": 322,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 226,
+      "offset": 341,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 244,
+      "offset": 359,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "StringLiteral",
-      "offset": 456,
+      "offset": 571,
       "length": 20,
       "value": "\"io.groobee.traceId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "StringLiteral",
-      "offset": 1107,
+      "offset": 1392,
       "length": 10,
       "value": "\"Groobee-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1156,
+      "offset": 1441,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 1288,
+      "offset": 1573,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 1332,
+      "offset": 1617,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1442,
+      "offset": 1727,
       "length": 3,
       "value": "512"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "StringLiteral",
-      "offset": 1506,
+      "offset": 1791,
       "length": 25,
       "value": "\"io.groobee.log.callback\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1594,
+      "offset": 1879,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "StringLiteral",
-      "offset": 1728,
+      "offset": 2013,
       "length": 302,
       "value": "\"(?i)(\"?(?:serviceKey|service_key|apiKey|api_key|pushToken|push_token|fcmToken|fcm_token|deviceToken|device_token|token|memberId|member_id|userId|user_id|cookieId|cookie_id|adId|ad_id|authorization|password|secret|clientSecret|client_secret|clientId|client_id)\"?\\s*[:=]\\s*\"?)([^\",\\s\\]\\}\\)]+)\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "Array",
-      "offset": 2049,
+      "offset": 2334,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "StringLiteral",
-      "offset": 2150,
+      "offset": 2435,
       "length": 276,
       "value": "\"(?i)([?&](?:serviceKey|service_key|apiKey|api_key|pushToken|push_token|fcmToken|fcm_token|deviceToken|device_token|token|memberId|member_id|userId|user_id|cookieId|cookie_id|adId|ad_id|authorization|password|secret|clientSecret|client_secret|clientId|client_id)=)([^&#\\s]+)\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Common\/LoggerUtils.swift",
       "kind": "Array",
-      "offset": 2445,
+      "offset": 2730,
       "length": 2,
       "value": "[]"
     },
