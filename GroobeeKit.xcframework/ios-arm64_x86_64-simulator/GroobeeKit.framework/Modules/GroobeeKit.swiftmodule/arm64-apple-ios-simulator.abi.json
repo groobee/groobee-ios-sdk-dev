@@ -5455,6 +5455,107 @@
           },
           {
             "kind": "Var",
+            "name": "KEY_PUSH_MESSAGE_ID",
+            "printedName": "KEY_PUSH_MESSAGE_ID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10GroobeeKit15PushConstraintsV19KEY_PUSH_MESSAGE_IDSSvpZ",
+            "mangledName": "$s10GroobeeKit15PushConstraintsV19KEY_PUSH_MESSAGE_IDSSvpZ",
+            "moduleName": "GroobeeKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit15PushConstraintsV19KEY_PUSH_MESSAGE_IDSSvgZ",
+                "mangledName": "$s10GroobeeKit15PushConstraintsV19KEY_PUSH_MESSAGE_IDSSvgZ",
+                "moduleName": "GroobeeKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "KEY_PUSH_DELIVERY_ID",
+            "printedName": "KEY_PUSH_DELIVERY_ID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10GroobeeKit15PushConstraintsV20KEY_PUSH_DELIVERY_IDSSvpZ",
+            "mangledName": "$s10GroobeeKit15PushConstraintsV20KEY_PUSH_DELIVERY_IDSSvpZ",
+            "moduleName": "GroobeeKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit15PushConstraintsV20KEY_PUSH_DELIVERY_IDSSvgZ",
+                "mangledName": "$s10GroobeeKit15PushConstraintsV20KEY_PUSH_DELIVERY_IDSSvgZ",
+                "moduleName": "GroobeeKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "KEY_PUSH_SERVICE",
             "printedName": "KEY_PUSH_SERVICE",
             "children": [
@@ -21921,6 +22022,236 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "messageId",
+            "printedName": "messageId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10GroobeeKit8PushDataC9messageIdSSSgvp",
+            "mangledName": "$s10GroobeeKit8PushDataC9messageIdSSSgvp",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit8PushDataC9messageIdSSSgvg",
+                "mangledName": "$s10GroobeeKit8PushDataC9messageIdSSSgvg",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit8PushDataC9messageIdSSSgvs",
+                "mangledName": "$s10GroobeeKit8PushDataC9messageIdSSSgvs",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit8PushDataC9messageIdSSSgvM",
+                "mangledName": "$s10GroobeeKit8PushDataC9messageIdSSSgvM",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deliveryId",
+            "printedName": "deliveryId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10GroobeeKit8PushDataC10deliveryIdSSSgvp",
+            "mangledName": "$s10GroobeeKit8PushDataC10deliveryIdSSSgvp",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit8PushDataC10deliveryIdSSSgvg",
+                "mangledName": "$s10GroobeeKit8PushDataC10deliveryIdSSSgvg",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit8PushDataC10deliveryIdSSSgvs",
+                "mangledName": "$s10GroobeeKit8PushDataC10deliveryIdSSSgvs",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GroobeeKit8PushDataC10deliveryIdSSSgvM",
+                "mangledName": "$s10GroobeeKit8PushDataC10deliveryIdSSSgvM",
+                "moduleName": "GroobeeKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "getCampaignKey",
             "printedName": "getCampaignKey()",
@@ -22082,6 +22413,70 @@
           },
           {
             "kind": "Function",
+            "name": "getMessageId",
+            "printedName": "getMessageId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GroobeeKit@objc(cs)PushData(im)getMessageId",
+            "mangledName": "$s10GroobeeKit8PushDataC12getMessageIdSSSgyF",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeliveryId",
+            "printedName": "getDeliveryId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GroobeeKit@objc(cs)PushData(im)getDeliveryId",
+            "mangledName": "$s10GroobeeKit8PushDataC13getDeliveryIdSSSgyF",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setCampaignKey",
             "printedName": "setCampaignKey(_:)",
             "children": [
@@ -22221,6 +22616,66 @@
             "declKind": "Func",
             "usr": "c:@M@GroobeeKit@objc(cs)PushData(im)setGoalCd:",
             "mangledName": "$s10GroobeeKit8PushDataC9setGoalCdyACSSF",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMessageId",
+            "printedName": "setMessageId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushData",
+                "printedName": "GroobeeKit.PushData",
+                "usr": "c:@M@GroobeeKit@objc(cs)PushData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GroobeeKit@objc(cs)PushData(im)setMessageId:",
+            "mangledName": "$s10GroobeeKit8PushDataC12setMessageIdyACSSF",
+            "moduleName": "GroobeeKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDeliveryId",
+            "printedName": "setDeliveryId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushData",
+                "printedName": "GroobeeKit.PushData",
+                "usr": "c:@M@GroobeeKit@objc(cs)PushData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GroobeeKit@objc(cs)PushData(im)setDeliveryId:",
+            "mangledName": "$s10GroobeeKit8PushDataC13setDeliveryIdyACSSF",
             "moduleName": "GroobeeKit",
             "isOpen": true,
             "declAttributes": [
@@ -36513,49 +36968,63 @@
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/PushMessage\/ConstraintsPush.swift",
       "kind": "StringLiteral",
-      "offset": 640,
+      "offset": 738,
+      "length": 11,
+      "value": "\"messageId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/PushMessage\/ConstraintsPush.swift",
+      "kind": "StringLiteral",
+      "offset": 796,
+      "length": 12,
+      "value": "\"deliveryId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/PushMessage\/ConstraintsPush.swift",
+      "kind": "StringLiteral",
+      "offset": 851,
       "length": 9,
       "value": "\"service\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/PushMessage\/ConstraintsPush.swift",
       "kind": "StringLiteral",
-      "offset": 694,
+      "offset": 905,
       "length": 9,
       "value": "\"GROOBEE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/PushMessage\/ConstraintsPush.swift",
       "kind": "StringLiteral",
-      "offset": 751,
+      "offset": 962,
       "length": 4,
       "value": "\"AD\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/PushMessage\/ConstraintsPush.swift",
       "kind": "StringLiteral",
-      "offset": 803,
+      "offset": 1014,
       "length": 4,
       "value": "\"IN\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/PushMessage\/ConstraintsPush.swift",
       "kind": "StringLiteral",
-      "offset": 875,
+      "offset": 1086,
       "length": 47,
       "value": "\"io.groobee.push.category.notificationSettings\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/PushMessage\/ConstraintsPush.swift",
       "kind": "StringLiteral",
-      "offset": 988,
+      "offset": 1199,
       "length": 45,
       "value": "\"io.groobee.push.action.notificationSettings\""
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/PushMessage\/ConstraintsPush.swift",
       "kind": "StringLiteral",
-      "offset": 1105,
+      "offset": 1316,
       "length": 15,
       "value": "\"알림 설정\""
     },
@@ -36597,14 +37066,14 @@
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Groobee.swift",
       "kind": "BooleanLiteral",
-      "offset": 6207,
+      "offset": 7242,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/groobee-kit-ios\/groobee-kit-ios\/Sources\/GroobeeKit\/Groobee.swift",
       "kind": "IntegerLiteral",
-      "offset": 105291,
+      "offset": 106750,
       "length": 1,
       "value": "0"
     },

@@ -398,16 +398,22 @@ public class StyleConstraints {
   public var pushMsgCnt: Swift.String?
   public var pushSendDtm: Swift.String?
   public var goalCd: Swift.String?
+  public var messageId: Swift.String?
+  public var deliveryId: Swift.String?
   @objc public func getCampaignKey() -> Swift.String?
   @objc public func getPushMsgType() -> Swift.String?
   @objc public func getPushMsgCnt() -> Swift.String?
   @objc public func getPushSendDtm() -> Swift.String?
   @objc public func getGoalCd() -> Swift.String?
+  @objc public func getMessageId() -> Swift.String?
+  @objc public func getDeliveryId() -> Swift.String?
   @objc public func setCampaignKey(_ campaignKey: Swift.String) -> GroobeeKit.PushData
   @objc public func setPushMsgType(_ pushMsgType: Swift.String) -> GroobeeKit.PushData
   @objc public func setPushMsgCnt(_ pushMsgCnt: Swift.String) -> GroobeeKit.PushData
   @objc public func setPushSendDtm(_ pushSendDtm: Swift.String) -> GroobeeKit.PushData
   @objc public func setGoalCd(_ goalCd: Swift.String) -> GroobeeKit.PushData
+  @objc public func setMessageId(_ messageId: Swift.String) -> GroobeeKit.PushData
+  @objc public func setDeliveryId(_ deliveryId: Swift.String) -> GroobeeKit.PushData
   @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
