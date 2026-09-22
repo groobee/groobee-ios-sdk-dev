@@ -409,6 +409,8 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)setAppSessionEndWithIsTerminated:(BOOL)isTerminated iosSessionDtm:(NSString * _Nonnull)iosSessionDtm;
 - (void)setAppLocationInfoWithUserLocation:(CLLocation * _Nonnull)userLocation;
 - (NSDictionary<NSString *, NSString *> * _Nonnull)getGroobeeWebCookies SWIFT_WARN_UNUSED_RESULT;
+- (void)syncNativeToWeb:(NSString * _Nonnull)domain;
+- (void)syncWebToNativeWithWebView:(WKWebView * _Nonnull)webView urlRequest:(NSURLRequest * _Nonnull)urlRequest;
 - (void)setWebViewCookiesWithWebView:(WKWebView * _Nonnull)webView urlRequest:(NSURLRequest * _Nonnull)urlRequest;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -524,15 +526,11 @@ SWIFT_CLASS("_TtC10GroobeeKit8PushData")
 - (NSString * _Nullable)getPushMsgCnt SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getPushSendDtm SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getGoalCd SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nullable)getMessageId SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nullable)getDeliveryId SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setCampaignKey:(NSString * _Nonnull)campaignKey SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setPushMsgType:(NSString * _Nonnull)pushMsgType SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setPushMsgCnt:(NSString * _Nonnull)pushMsgCnt SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setPushSendDtm:(NSString * _Nonnull)pushSendDtm SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setGoalCd:(NSString * _Nonnull)goalCd SWIFT_WARN_UNUSED_RESULT;
-- (PushData * _Nonnull)setMessageId:(NSString * _Nonnull)messageId SWIFT_WARN_UNUSED_RESULT;
-- (PushData * _Nonnull)setDeliveryId:(NSString * _Nonnull)deliveryId SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -979,6 +977,8 @@ SWIFT_CLASS("_TtC10GroobeeKit7Groobee") SWIFT_AVAILABILITY(ios,introduced=10.0)
 - (void)setAppSessionEndWithIsTerminated:(BOOL)isTerminated iosSessionDtm:(NSString * _Nonnull)iosSessionDtm;
 - (void)setAppLocationInfoWithUserLocation:(CLLocation * _Nonnull)userLocation;
 - (NSDictionary<NSString *, NSString *> * _Nonnull)getGroobeeWebCookies SWIFT_WARN_UNUSED_RESULT;
+- (void)syncNativeToWeb:(NSString * _Nonnull)domain;
+- (void)syncWebToNativeWithWebView:(WKWebView * _Nonnull)webView urlRequest:(NSURLRequest * _Nonnull)urlRequest;
 - (void)setWebViewCookiesWithWebView:(WKWebView * _Nonnull)webView urlRequest:(NSURLRequest * _Nonnull)urlRequest;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -1094,15 +1094,11 @@ SWIFT_CLASS("_TtC10GroobeeKit8PushData")
 - (NSString * _Nullable)getPushMsgCnt SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getPushSendDtm SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getGoalCd SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nullable)getMessageId SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nullable)getDeliveryId SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setCampaignKey:(NSString * _Nonnull)campaignKey SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setPushMsgType:(NSString * _Nonnull)pushMsgType SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setPushMsgCnt:(NSString * _Nonnull)pushMsgCnt SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setPushSendDtm:(NSString * _Nonnull)pushSendDtm SWIFT_WARN_UNUSED_RESULT;
 - (PushData * _Nonnull)setGoalCd:(NSString * _Nonnull)goalCd SWIFT_WARN_UNUSED_RESULT;
-- (PushData * _Nonnull)setMessageId:(NSString * _Nonnull)messageId SWIFT_WARN_UNUSED_RESULT;
-- (PushData * _Nonnull)setDeliveryId:(NSString * _Nonnull)deliveryId SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
